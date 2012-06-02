@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- Cheryl Ferguson MiU Project 1 1206-->
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ministry 2 Go!</title>
+
+	<!--  Mobile viewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<!-- StyleSheets -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css"
+
+</head>
+
+<body>
+	<!-- home page -->
+	<div data-role="page" id="homePage">
+	
+		
+	<div data-role="header" data-position="fixed">
+		<h1>Ministry 2 Go</h1>
+	</div>
+	
+			
+	<div>
+		<a href="additem.html" data-ajax="false"><img src="images/cta.png" id="cta" height="45%" width="100%"/></a> 
+	</div>
+	   
+    
+    <!-- search field -->
+			<div data-role="fieldcontain">
+				<label for="sitesearch"><p>Search:</p></label>
+				<input type="search" name="sitesearch" id="sitesearch" />
+			</div>
+
+	<div data-role="content">
+	
+		<!-- Category Information -->
+
+		<ul data-role="listview" data-inset="true" data-theme="b">
+		<li data-role="list-divider">Browse </li>
+				
+			<li><p><a href="#CLPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Church Leadership</a></p></li>
+			<li><p><a href="#CMPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Church Ministries</a></p></li>
+			<li><p><a href="#SSPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Sunday School Lesson</a></p></li>
+			<li><p><a href="#UEPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Upcoming Events</a></p></li>
+			<li><p><a href="#MDPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Membership Directory</a></p></li>
+		</ul>
+	</div>
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="https://github.com/MsCheryl/MDV_Projects">GitHub Repo</a>&nbsp;&nbsp;&nbsp;<a href="http://mscheryl.github.com/MDV_Projects/">GitHub Site</a></h4>
+		</div>
+		
+	</div>
+	
+
+		<!-- Church Leadership Information -->
+		<div data-role="page" id="CLPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Church Leadership</h1>
+			</div>
+
+			<div data-role="content">
+				<p>List Church Leadership will be here</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Cheryl Ferguson MiU 1206</h4>
+			</div>
+
+		</div>
+		
+		
+		<!-- Church Ministries Information -->
+		<div data-role="page" id="CMPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Church Ministries</h1>
+			</div>
+
+			<div data-role="content">
+				<p>Church Ministry Information will be here</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Cheryl Ferguson MiU 1206</h4>
+			</div>
+			
+		</div>
+
+		<!-- Sunday School Lesson Information -->
+		<div data-role="page" id="SSPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Sunday School Lesson</h1>
+			</div>
+
+			<div data-role="content">
+				<p>Sunday School Lesson Information will be here</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Cheryl Ferguson MiU 1206</h4>
+			</div>
+			
+		</div>
+
+	
+
+	<!-- Upcoming Events Information -->
+	<div data-role="page" id="UEPage" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Upcoming Events</h1>
+		</div>
+
+		<div data-role="content">
+			<p>A Calendar with upcoming events will be located here</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Cheryl Ferguson MiU 1206</h4>
+		</div>
+
+	</div>
+
+		
+	<!-- Membership Directory-->
+	<div data-role="page" id="MDPage" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Membership Directory</h1>
+		</div>
+
+		<div data-role="content">
+			<p>Membership Directory will be here</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Cheryl Ferguson MiU 1206</h4>
+		</div>
+
+	</div>
+	
+		
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>	
+		
+	
+
+</body>
+</html>
