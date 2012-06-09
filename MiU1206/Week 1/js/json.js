@@ -4,7 +4,7 @@
 
 
 var json = {
-	"entry1": {
+	"member1": {
 		"ministryInfo": ["Select Ministry:", "Leadership"],
 		"fname": ["First Name:", "Susie"],
 		"lname": ["Last Name:", "Williams"],
@@ -33,7 +33,7 @@ var json = {
 		"notes": ["Notes:", "Music Ministry"]
 	},
 	"member3": {
-		"ministryInfo": ["Select Appropriate Greeting:", "Mrs"],
+		"ministryInfo": ["Select Minstry:", "Leadership"],
 		"fname": ["First Name:", "Sue"],
 		"lname": ["Last Name:", "Turner"],
 		"username": ["Username:", "TurnSue"],
@@ -47,7 +47,7 @@ var json = {
 		"notes": ["Notes:", "Prison Ministry"]
 	},
 	"member4": {
-		"greetInfo": ["Select Appropriate Greeting:", "Master"],
+		"ministryInfo": ["Select Ministry:", "Ministries"],
 		"fname": ["First Name:", "Marquis"],
 		"lname": ["Last Name:", "Williams"],
 		"username": ["Username:", "LoKi"],
@@ -61,7 +61,7 @@ var json = {
 		"notes": ["Notes:", "Usher Ministry"]
 	},
 	"member5": {
-		"greetInfo": ["Select Appropriate Greeting:", "Mr"],
+		"ministryInfo": ["Select Ministry:", "Ministries"],
 		"fname": ["First Name:", "Johnny"],
 		"lname": ["Last Name:", "Walker"],
 		"username": ["Username:", "BigBoog"],
@@ -72,11 +72,11 @@ var json = {
 		"affirm": ["Affirm:", "Yes"],
 		"ease":["Ease of Use:", "7"],
 		"date": ["Date:", "2012-1-1"],
-		"notes": ["Notes:", "Usher Ministry"]
+		"notes": ["Notes:", "Sunday School Teacher"]
 	
-	}
+	},
 	"member6": {
-		"greetInfo": ["Select Appropriate Greeting:", "Mr"],
+		"ministryInfo": ["Select Ministry:", "Ministries"],
 		"fname": ["First Name:", "Mykal"],
 		"lname": ["Last Name:", "Walker"],
 		"username": ["Username:", "PunB"],
@@ -88,5 +88,204 @@ var json = {
 		"ease":["Ease of Use:", "8"],
 		"date": ["Date:", "2012-3-1"],
 		"notes": ["Notes:", "Music Ministry"]
+	}
+	"member7": {
+		"ministryInfo": ["Select Ministry:", "Lesson"],
+		"fname": ["First Name:", "Susie"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "Susiepoo"],
+		"pw": ["Desired Password:","password"],
+		"email": ["Email:", "susiepoo@yourmail.com"],
+		"pn": ["Phone Number:", "123-456-7890"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "7"],
+		"date": ["Date:", "2012-1-1"],
+		"notes": ["Notes:", "Pastor"]
+	},
+	"member8": {
+		"ministryInfo": ["Select Ministry:", "Lesson"],
+		"fname": ["First Name:", "Becky"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "Beck"],
+		"pw": ["Desired Password:","car1"],
+		"email": ["Email:", "beckbeck@mail.com"],
+		"pn": ["Phone Number:", "202-456-7890"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "9"],
+		"date": ["Date:", "2012-2-12"],
+		"notes": ["Notes:", "Music Ministry"]
+	},
+	"member9": {
+		"ministryInfo": ["Select Minstry:", "Upcoming"],
+		"fname": ["First Name:", "Sue"],
+		"lname": ["Last Name:", "Turner"],
+		"username": ["Username:", "TurnSue"],
+		"pw": ["Desired Password:","abc123"],
+		"email": ["Email:", "trunsue@rmail.com"],
+		"pn": ["Phone Number:", "231-659-0000"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "9"],
+		"date": ["Date:", "2010-4-1"],
+		"notes": ["Notes:", "Prison Ministry"]
+	},
+	"member10": {
+		"ministryInfo": ["Select Ministry:", "Upcoming"],
+		"fname": ["First Name:", "Marquis"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "LoKi"],
+		"pw": ["Desired Password:","outlaw1"],
+		"email": ["Email:", "susiepoo@yourmail.com"],
+		"pn": ["Phone Number:", "123-456-7890"],
+		"gender": ["Gender:", "Male"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "7"],
+		"date": ["Date:", "2012-1-1"],
+		"notes": ["Notes:", "Usher Ministry"]
+	},
+	"member11": {
+		"ministryInfo": ["Select Ministry:", "Lesson"],
+		"fname": ["First Name:", "Johnny"],
+		"lname": ["Last Name:", "Walker"],
+		"username": ["Username:", "BigBoog"],
+		"pw": ["Desired Password:","augusta"],
+		"email": ["Email:", "susiepoo@yourmail.com"],
+		"pn": ["Phone Number:", "123-456-7890"],
+		"gender": ["Gender:", "Male"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "7"],
+		"date": ["Date:", "2012-1-1"],
+		"notes": ["Notes:", "Sunday School Teacher"]
+	
+	}
+	"member12": {
+		"ministryInfo": ["Select Ministry:", "Lesson"],
+		"fname": ["First Name:", "Mykal"],
+		"lname": ["Last Name:", "Walker"],
+		"username": ["Username:", "PunB"],
+		"pw": ["Desired Password:","theman"],
+		"email": ["Email:", "actjmd@aol.com"],
+		"pn": ["Phone Number:", "979-435-2356"],
+		"gender": ["Gender:", "Male"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "8"],
+		"date": ["Date:", "2012-3-1"],
+		"notes": ["Notes:", "Music Ministry"]
+	}
+	"member13": {
+		"ministryInfo": ["Select Ministry:", "Leadership"],
+		"fname": ["First Name:", "Susie"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "Susiepoo"],
+		"pw": ["Desired Password:","password"],
+		"email": ["Email:", "susiepoo@yourmail.com"],
+		"pn": ["Phone Number:", "123-456-7890"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "7"],
+		"date": ["Date:", "2012-1-1"],
+		"notes": ["Notes:", "Pastor"]
+	},
+	"member14": {
+		"ministryInfo": ["Select Ministry:", "Leadership"],
+		"fname": ["First Name:", "Becky"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "Beck"],
+		"pw": ["Desired Password:","car1"],
+		"email": ["Email:", "beckbeck@mail.com"],
+		"pn": ["Phone Number:", "202-456-7890"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "9"],
+		"date": ["Date:", "2012-2-12"],
+		"notes": ["Notes:", "Music Ministry"]
+	},
+	"member15": {
+		"ministryInfo": ["Select Minstry:", "Leadership"],
+		"fname": ["First Name:", "Sue"],
+		"lname": ["Last Name:", "Turner"],
+		"username": ["Username:", "TurnSue"],
+		"pw": ["Desired Password:","abc123"],
+		"email": ["Email:", "trunsue@rmail.com"],
+		"pn": ["Phone Number:", "231-659-0000"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "9"],
+		"date": ["Date:", "2010-4-1"],
+		"notes": ["Notes:", "Prison Ministry"]
+	},
+	"member16": {
+		"ministryInfo": ["Select Ministry:", "Upcoming"],
+		"fname": ["First Name:", "Marquis"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "LoKi"],
+		"pw": ["Desired Password:","outlaw1"],
+		"email": ["Email:", "susiepoo@yourmail.com"],
+		"pn": ["Phone Number:", "123-456-7890"],
+		"gender": ["Gender:", "Male"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "7"],
+		"date": ["Date:", "2012-1-1"],
+		"notes": ["Notes:", "Usher Ministry"]
+	},
+	"member17": {
+		"ministryInfo": ["Select Ministry:", "Upcoming"],
+		"fname": ["First Name:", "Johnny"],
+		"lname": ["Last Name:", "Walker"],
+		"username": ["Username:", "BigBoog"],
+		"pw": ["Desired Password:","augusta"],
+		"email": ["Email:", "susiepoo@yourmail.com"],
+		"pn": ["Phone Number:", "123-456-7890"],
+		"gender": ["Gender:", "Male"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "7"],
+		"date": ["Date:", "2012-1-1"],
+		"notes": ["Notes:", "Sunday School Teacher"]
+	
+	}
+	"member18": {
+		"ministryInfo": ["Select Ministry:", "Membership"],
+		"fname": ["First Name:", "Mykal"],
+		"lname": ["Last Name:", "Walker"],
+		"username": ["Username:", "PunB"],
+		"pw": ["Desired Password:","theman"],
+		"email": ["Email:", "actjmd@aol.com"],
+		"pn": ["Phone Number:", "979-435-2356"],
+		"gender": ["Gender:", "Male"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "8"],
+		"date": ["Date:", "2012-3-1"],
+		"notes": ["Notes:", "Music Ministry"]
+	}
+	"member19": {
+		"ministryInfo": ["Select Ministry:", "Membership"],
+		"fname": ["First Name:", "Susie"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "Susiepoo"],
+		"pw": ["Desired Password:","password"],
+		"email": ["Email:", "susiepoo@yourmail.com"],
+		"pn": ["Phone Number:", "123-456-7890"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "7"],
+		"date": ["Date:", "2012-1-1"],
+		"notes": ["Notes:", "Pastor"]
+	},
+	"member20": {
+		"ministryInfo": ["Select Ministry:", "Ministries"],
+		"fname": ["First Name:", "Becky"],
+		"lname": ["Last Name:", "Williams"],
+		"username": ["Username:", "Beck"],
+		"pw": ["Desired Password:","car1"],
+		"email": ["Email:", "beckbeck@mail.com"],
+		"pn": ["Phone Number:", "202-456-7890"],
+		"gender": ["Gender:", "Female"],
+		"affirm": ["Affirm:", "Yes"],
+		"ease":["Ease of Use:", "9"],
+		"date": ["Date:", "2012-2-12"],
+		"notes": ["Notes:", "Music Ministry"]
+	},
 	
 }

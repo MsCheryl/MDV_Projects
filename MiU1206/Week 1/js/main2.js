@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement( 'ul' );
 			makeli.appendChild(makeSubList);
-			getImage(obj.greetInfo[1], makeSubList);//Image Information 
+			getImage(obj.ministryInfo[1], makeSubList);//Image Information 
 			for(var n in obj){
 				var makeSubli = document.createElement( 'li' );
 				makeSubList.appendChild(makeSubli);
@@ -129,7 +129,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 	//Adding Image
-	function getImage(catName, makeSubList){ //Member Greeting Selection
+	function getImage(catName, makeSubList){ //Member Ministry Selection
 		var imageLi = document.createElement('li');
 		makeSubList.appendChild(imageLi);
 		var newImg = document.createElement('img');
@@ -253,17 +253,13 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		//Get Error Messages
 		var messageAry = [];
-		//Greeting Validation
-		/*if(getGreetInfo.value ==="--Select One--"){
-			var greetInfoError = "Please select one.";
-			getGreetInfo.style.border = "2px solid red";
-			messageAry.push(greetInfoError);
-		}*/
+		//Ministry Validation
 		if(getMinistryInfo.value ==="--Select One--"){
-			var ministryInfoError = "Please select one";
+			var ministryInfoError = "Please select one.";
 			getMinistryInfo.style.border = "2px solid red";
 			messageAry.push(ministryInfoError);
 		}
+		
 		//First Name Validation
 		if(getFname.value ===""){
 			var fNameError = "Please enter your first name.";
@@ -309,12 +305,12 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 		//Variable defaults
-		var ministryInfo = ["--Select One--", "Church Leadership", "Church Ministries", "Sunday School Lesson", "Upcoming Events","Membership Directory"],
+		var ministryInfo = ["--Select One--", "Leadership", "Ministries", "Weekly Lesson", "Upcoming Events","Membership Directory"],
 			gendervalue,
 			affirmValue = "No",
 			errMsg = $('errors');
 			;
-			addMinistryInfo();
+			addGreetInfo();
 
 		//Set Link & Submit Click Events
 	
