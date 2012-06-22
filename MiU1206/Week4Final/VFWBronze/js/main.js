@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement( 'ul' );
 			makeli.appendChild(makeSubList);
-			getImage(obj.greetInfo[1], makeSubList);//Image Information 
+			getImage(obj.ministryInfo[1], makeSubList);//Image Information 
 			for(var n in obj){
 				var makeSubli = document.createElement( 'li' );
 				makeSubList.appendChild(makeSubli);
