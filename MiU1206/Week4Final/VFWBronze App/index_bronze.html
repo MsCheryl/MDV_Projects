@@ -1,24 +1,900 @@
 <!DOCTYPE html>
-<!-- Project 3, 
-	 VFW 1205 Cheryl Ferguson  -->
-<html>
+
+<!-- Cheryl Ferguson MiU 2306 -->
+
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Ministry 2 Go!</title>
+		<meta name="description" content="" />
+		<meta name="keyword" content="" />
+		<meta name="robots" content="" />
 	
-		<head>
-				<meta charset="utf-8" />
-				<meta name="description" content="directory, membership." />
-				<meta name="keywords" content="Church Membership Directory" />
-				<meta name="robots" content="index, follow" />
-				<meta name="robots" content="noindex, nofollow" />
-				<meta name="HandheldFriendly" content="True" />
-				<meta name="MobileOptimzed" content="320" />
-				<meta name="viewport" content="width=450px, height=690px, overflow=scroll" /> 
-				<link href="styles.css" rel="stylesheet" />
-				<title>Church Membership Directory</title>
-		</head>
-		<body>
-				<!-- Header Tags -->
-				<h1>Church Membership Directory</h1>
-				<p>This app will be used to collect information from the parishioners from this church.  Proper utilization will allow us to minimize our over consumption of paper.  Thank you in advance.</p>
-				<a href="additem.html">Let's Begin!</a>
-		</body>
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+		<meta http-equiv="cleartype" content="on">
+	
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css"/>
+		<link rel="stylesheet" href="css/ps/style.css"/>
+		<link rel="stylesheet" href="css/ps/jquery-mobile.css"/>
+		<link rel="stylesheet" href="css/ps/photoswipe.css"/>
+		<link rel="stylesheet" type="text/css" src="css/indexstyle_bronze.css" />
+		
+	
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	</head>
+		
+	<body>
+		
+		
+		<div data-role="page" id="mainbronze" data-theme="e">
+			<div data-role="header" id="header">
+				<h1>Ministry 2 Go!~ Bronze</h1>
+			</div>
+			
+			<div data-role="header" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+				
+		<div data-theme='f'>
+					<div align="center"><a data-theme='e' data-role="button" href='#search'>Search</a></div>
+					</div>
+		<div data-theme='e'>
+					<div align="center"><a data-theme='d' data-role="button" href='#news'>Ministry News</a></div>
+					</div>
+				
+			
+			
+		<ul data-role="listview" data-theme="a" data-divider-theme="a">
+			<li data-role="list-divider">Browse Ministries:</li>
+					
+			
+		</ul>
+		
+			<div data-role="content">
+		<ul class="gallery">
+			<li><a href="#men" rel="external"><img src="img/men.png" alt="men"/></a>
+			<p id="imp" style="text-align:center;">
+				Men
+			</p>
+			</li>
+			<li><a href="#women" rel="external"><img src="img/women.png" alt="women"/></a>
+			<p id='ush'style="text-align:center;">
+				Women
+			</p>
+			</li>
+			<li><a href="#teens" rel="external"><img src="img/teen.png" alt="teens"/></a>
+			<p id='wor' style="text-align:center;">
+				Teens
+			</p>
+			</li>
+			<li><a href="#children" rel="external"><img src="img/children.png" alt="children"/></a>
+			<p id='tec' style="text-align:center;">
+				Children
+			</p>
+			</li>
+			<li><a href="#seniors" rel="external"><img src="img/seniors.png" alt="seniors"/></a>
+			<p id='nur' style="text-align:center;">
+				Seniors
+			</p>
+			</li>
+			<li><a href="#all" rel="external"><img src="img/all.png" alt="View All"/></a>
+			<p id='all' style="text-align:center;">
+				Members Seeking a Ministry
+			</p>
+			</li>
+			
+		</ul>
+	</div>
+					<br>
+					<nav>
+				<a data-theme='b' button type="button" href="#additem">SIGN UP</a>
+			</nav>
+			
+					
+				</ul>
+				<br>
+							<div data-role="footer">		
+	<div data-role="navbar" data-theme='c'>
+		<ul>
+			<li><a href="https://github.com/mscheryl/MDV_Projects/MiU1206">REPO</a></li>
+			<li><a href="http://mscheryl.github.com/MDV_Projects/MiU1206/Week4Final/index_bronze.html">Bronze</a></li>
+			<li><a href="http://mscheryl.github.com/MDV_Projects/MiU1206/Week4Final/index.html">Gold</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+			</div>
+		
+			
+		</div> 
+<div data-role="page" id="men" data-add-back-btn="true" data-theme="a">
+			
+			
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Men</h3>
+						<p>This ministry serves to support the needs of our 
+							male population.  This is done by by prayer groups, 
+							monthly fellowships, and our Annual Myrtle Beach trip.</p>
+					</li>
+					<nav>
+						<a button type="button" href="#women" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+					</nav>	
+					<li data-theme="d"><a href="#ajones"><img src="img/men.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Andrew Jones</h3></div></a></li>
+					<li data-theme="d"><a href="#jlane"><img src="img/men.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Jerry Lane</h3></div></a></li>
+					<li data-theme="d"><a href="#acaine"><img src="img/men.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Arthur Caine</h3></div></a></li>							
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="women" data-add-back-btn="true" data-theme="a">
+			
+			
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Women</h3>
+						<p>This ministry serves to support the needs of our 
+							female population.  This is done by by prayer groups, 
+							monthly fellowships, our on-going program to support 
+							new parents.</p>
+					</li>
+						<nav>
+						<a button type="button" href="#teens" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+						</nav>	
+					<li data-theme="d"><a href="#kdurant"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Kimberly Durant</h3></div></a></li>
+					<li data-theme="d"><a href="#ggrinage"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Gloria Grinage</h3></div></a></li>
+					<li data-theme="d"><a href="#lmangrum"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Linda Mangrum</h3></div></a></li>							
+				</ul>
+				
+			</div>
+			
+			
+			<div data-role="page" id="teens" data-add-back-btn="true" data-theme="a">
+			
+			
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Teens</h3>
+						<p>This ministry works with preparing our young
+							people to continue their post secondary education, 
+							by providing with one to one mentoring, educational  and financial support.</p>
+					</li>
+						<nav>
+						<a button type="button" href="#children" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+						</nav>	
+					<li data-theme="d"><a href="#rcaine"><img src="img/children.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Rose Caine</h3></div></a></li>
+					<li data-theme="d"><a href="#acainel"><img src="img/children.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Arthur Caine</h3></div></a></li>
+					<li data-theme="d"><a href="#vsmith"><img src="img/children.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Valeria Smith</h3></div></a></li>								
+				</ul>
+				
+			</div>
+			
+						
+			<div data-role="page" id="children" data-add-back-btn="true" data-theme="a">
+			
+		
+					
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Children Choir(ages 1-12)</h3>
+						<p>This ministry works with preparing our young
+							people with musical worship.</p>
+					</li>
+						<nav>
+						<a button type="button" href="#Seniors" data-transition='slide' data-back='true'>NEXT MINISTRY</a>
+						</nav>	
+					<li data-theme="d"><a href="#rcaine"><img src="img/children.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Rose Caine</h3></div></a></li>
+					<li data-theme="d"><a href="#acainel"><img src="img/children.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Arthur Caine</h3></div></a></li>
+					<li data-theme="d"><a href="#vsmith"><img src="img/children.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Valeria Smith</h3></div></a></li>									
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="Seniors" data-add-back-btn="true" data-theme="a">
+			
+			
+								
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Seniors</h3>
+						<p> Mission:  To assist those members age 62 and 
+							older with daily duties. </p>
+					</li>
+					<nav>
+						<a button type="button" href="index_bronze.html" data-transition='slide' data-back='true'>HOME</a>
+						</nav>	
+					<li data-theme="d"><a href="#cwilliams"><img src="img/seniors.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Curlie Williams</h3></div></a></li>
+					<li data-theme="d"><a href="#bmarshall"><img src="img/seniors.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Betty Marshall</h3></div></a></li>
+					<li data-theme="d"><a href="#tpettis"><img src="img/seniors.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Toni Pettis</h3></div></a></li>								
+				</ul>
+				
+			</div>
+			
+			<div data-role="page" id="all" data-add-back-btn="true" data-theme="a">
+			
+					
+			<nav>
+						<a button type="button" href="index_bronze.html" data-transition='slide' data-back='true'>HOME</a>
+						</nav>	
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Members ~ Seeking a Ministry</h3>
+						<p>This page lists all members currently in a ministry.</p>
+					</li>
+					<li data-theme="d"><a href="#kwilliams"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Kathy Williams</h3></div></a></li>
+					<li data-theme="d"><a href="#fstrong"><img src="img/men.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Faith Strong</h3></div></a></li>
+					<li data-theme="d"><a href="#dthomas"><img src="img/men.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Dominic Thomas</h3></div></a></li>
+					<li data-theme="d"><a href="#jbelk"><img src="img/Women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Jewel Belk</h3></div></a></li>
+					<li data-theme="d"><a href="#afogan"><img src="img/Women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Avonda Fogan</h3></div></a></li>
+					<li data-theme="d"><a href="#afogan"><img src="img/Women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Anita Fogan</h3></div></a></li>	
+					<li data-theme="d"><a href="#vfogan"><img src="img/teen.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Vaughn Fogan</h3></div></a></li>									
+				</ul>
+				
+			</div>
+			<div data-role="page" id="news" data-add-back-btn="true" data-theme="a">
+			
+				<nav>
+						<a button type="button" href="index_bronze.html" data-transition='slide' data-back='true'>HOME</a>
+						</nav>		
+			
+				<ul data-role="listview" data-theme="a" data-filter="true">
+					<li>
+						<h3>Ministry News</h3>
+						<p>Upcoming Events</p>
+					</li>
+					
+					<ul>
+					<li><h6><a>National Christian Education, St. Louis, MO</a></h6></li>
+					<ul><h6>Monday 06/18-22/2012, Added Today, 12:05 AM</h6></ul>
+					</ul>
+				
+					<ul>
+					<li><h6><a>Vacation Bible School</a></h6></li>
+					<ul><h6>Monday 07/16-26/2012, Added Today, 12:00 AM</h6></ul>
+					</ul>
+				</div>
+	
+		
+<!--Example Data -->
+
+		
+				<div data-role="page" id="ajones" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Andrew Jones</h3>
+						<a href="mailto:ajones@hotmail.com?subject=Ministry" id='email'> ajones@hotmail.com</a>
+						<p>Phone: 123-456-1111<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="jlane" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Jerry Lane</h3>
+						<a href="mailto:jlane@msn.com?subject=Ministry" id='email'> jlane@msn.com</a>
+						<p>Phone: 123-456-2222<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="acaine" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Arthur Caine</h3>
+						<a href="mailto:acaine@hotmail.com?subject=Ministry" id='email'> acaine@hotmail.com</a>
+						<p>Phone: 123-456-3333<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="rblack" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Robert Black</h3>
+						<a href="mailto:rblack@hotmail.com?subject=Ministry" id='email'> rblack@hotmail.com</a>
+						<p>Phone: 123-456-4444<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="rblack1" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Rodney Black</h3>
+						<a href="mailto:rblack1@cinci.rr.com?subject=Ministry" id='email'> rblack1@hotmail.com</a>
+						<p>Phone: 123-456-5555<p>
+						<p>Sex: Male<p>
+						
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="cwilliams" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Curlie Williams</h3>
+						<a href="mailto:cwilliams@msn.com?subject=Ministry" id='email'> cwilliams@msn.com</a>
+						<p>Phone: 123-456-1122<p>
+						<p>Sex: Female<p>
+						
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="jlane" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Jerry Lane</h3>
+						<a href="mailto:jlane@hotmail.com?subject=Ministry" id='email'> jlane@hotmail.com</a>
+						<p>Phone: 123-456-1123<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+				
+				<div data-role="page" id="acdurant" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>A.C. Durant</h3>
+						<a href="mailto:acdurant@gmail.com?subject=Ministry" id='email'> acdurant@gmail.com</a>
+						<p>Phone: 123-456-1124<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+				
+				<div data-role="page" id="vsmith" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Valeria Smith</h3>
+						<a href="mailto:mtoft@cinci.rr.com?subject=Ministry" id='email'> vsmith@hotmail.com</a>
+						<p>Phone: 123-456-1125<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+				
+				<div data-role="page" id="bmarshall" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Betty Marshall</h3>
+						<a href="mailto:bmarshall@gmail.com?subject=Ministry" id='email'> bmarshall@gmail.com</a>
+						<p>Phone: 123-456-1126<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="tpettis" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Toni Pettis</h3>
+						<a href="mailto:tpettis@aol.com?subject=Ministry" id='email'> tpettis@aol.com</a>
+						<p>Phone: 123-456-1127<p>
+						<p>Sex: Female<p>
+
+					</li>
+				</ul>
+		
+			</div>
+						
+				<div data-role="page" id="lmangrum" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Linda Mangrum</h3>
+						<a href="mailto:lmangrum@hotmail.com?subject=Ministry" id='email'> lmangrum@hotmail.com</a>
+						<p>Phone: 123-456-2212<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="kdurant" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Kimberly Durant</h3>
+						<a href="mailto:kdurant@gmail.com?subject=Ministry" id='email'> kdurant@gmail.com</a>
+						<p>Phone: 123-456-3321<p>
+						<p>Sex: Female<p>
+
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="ggrinage" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Gloria Grinage</h3>
+						<a href="mailto:ggrinage@hotmail.com?subject=Ministry" id='email'> ggrinage@hotmail.com</a>
+						<p>Phone: 123-456-3320<p>
+						<p>Sex: Female<p>
+
+					</li>
+				</ul>
+		
+			</div>
+				
+				<div data-role="page" id="cblack" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Corletta Black</h3>
+						<a href="mailto:cblack@hotmail.com?subject=Ministry" id='email'> cblack@hotmail.com</a>
+						<p>Phone: 123-456-3219<p>
+						<p>Sex: Female<p>
+
+					</li>
+				</ul>
+		
+			</div>
+			<div data-role="page" id="rkelly" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Renee Kelly</h3>
+						<a href="mailto:rkelly@verizon.net?subject=Ministry" id='email'> rkelly@verizon.net</a>
+						<p>Phone: 123-456-3218<p>
+						<p>Sex: Female<p>
+
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="pfrazier" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Phillip Frazier</h3>
+						<a href="mailto:pfraizer@verizon.net?subject=Ministry" id='email'> pfrazier@verizon.net</a>
+						<p>Phone: 123-456-3217<p>
+						<p>Sex: Male<p>
+
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="kwilliams" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Kathy Williams</h3>
+						<a href="mailto:kwilliams@hotmail.com?subject=Ministry" id='email'> kwilliams@hotmail.com</a>
+						<p>Phone: 123-456-3112<p>
+						<p>Sex: Female<p>
+
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="fstrong" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Faith Strong</h3>
+						<a href="mailto:fstrong@msn.com?subject=Ministry" id='email'> fstrong@msn.com</a>
+						<p>Phone: 123-456-5674<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="dthomas" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Dominic Thomas</h3>
+						<a href="mailto:dthomas@gmail.com?subject=Ministry" id='email'> dthomas@gmail.com</a>
+						<p>Phone: 123-456-0557<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="jbelk" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Jewel Belk</h3>
+						<a href="mailto:jbelk@gmail.com?subject=Ministry" id='email'> jbelk@gmail.com</a>
+						<p>Phone: 123-456-3454<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+			
+				<div data-role="page" id="rkelly1" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Raymond Kelly</h3>
+						<a href="mailto:mtoft@hotmail.com?subject=Ministry" id='email'> rkelly1@hotmail.com</a>
+						<p>Phone: 123-456-1127<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+				
+				<div data-role="page" id="afogan1" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Avonda Fogan</h3>
+						<a href="mailto:afogan1@msn.com?subject=Ministry" id='email'> afogan1@msn.com</a>
+						<p>Phone: 123-456-0000<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+				
+				<div data-role="page" id="agfogan" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Anita Fogan</h3>
+						<a href="mailto:mtoft@hotmail.com?subject=Ministry" id='email'> afogan@hotmail.com</a>
+						<p>Phone: 123-456-0553<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+				
+				<div data-role="page" id="vfogan" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Vaughn Fogan</h3>
+						<a href="mailto:vfogan@hotmail.com?subject=Ministry" id='email'> vfogan@hotmail.com</a>
+						<p>Phone: 123-456-1212<p>
+						<p>Sex: Male<p>
+					</li>
+				</ul>
+		
+			</div>
+			<div data-role="page" id="cbishop" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" data-position="fixed" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					
+				<ul data-role="listview" data-theme="b">
+					<li data-theme="a">				
+						<h3>Clydia Bishop</h3>
+						<a href="mailto:cbishop@hotmail.com?subject=Ministry" id='email'> cbishop@hotmail.com</a>
+						<p>Phone: 123-456-1220<p>
+						<p>Sex: Female<p>
+					</li>
+				</ul>
+		
+			</div>
+			</div>
+			
+				<div data-role="page" id="search" data-add-back-btn="true" data-theme="a">
+				
+				<div data-role="header" id="header">
+					<div align="center"> <img src="img/cta.png" /> </div>
+				</div>
+					<br>	
+				<ul data-role="listview" data-filter='true' data-theme="b">
+					<li data-theme="a">				
+						<h3>Betty Marshall</h3>
+						<a href="mailto:bmarshall@hotmail.com?subject=Ministry" id='email1'> bmarshall@hotmail.com</a>
+						<p>Phone: 123-456-0552<p>
+						<p>Sex: Female<p>
+
+					</li>
+				
+					<li data-theme="a">				
+						<h3>Clydia Bishop</h3>
+						<a href="mailto:cbishop@aol.com?subject=Ministry" id='email2'> cbishop@hotmail.com</a>
+						<p>Phone: 123-456-0553<p>
+						<p>Sex: Female<p>
+
+					</li>
+					<li data-theme="a">				
+						<h3>Ronald Fraiser</h3>
+						<a href="mailto:rfraiser@msn.com?subject=Ministry" id='email3'> rfraiser@msn.com</a>
+						<p>Phone: 123-456-0554<p>
+						<p>Sex: Male<p>
+
+					</li>
+					<li data-theme="a">				
+						<h3>Raymond Kelly</h3>
+						<a href="mailto:rkelly1@gmail.com?subject=Ministry" id='email4'> rkelly1@gmail.com</a>
+						<p>Phone: 123-456-0555<p>
+						<p>Sex: Male<p>
+
+					</li>
+					</li>
+					<li data-theme="a">				
+						<h3>A.C. Durant</h3>
+						<a href="mailto:adurant1@msn.com?subject=Ministry" id='email5'> adurant1@msn.com</a>
+						<p>Phone: 123-456-4545<p>
+						<p>Sex: Male<p>
+
+					</li>
+				</ul>
+		
+				</div>
+			
+								
+		<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
+
+			
+		<div align="center">	<div>
+				
+				<a data-role='button' href="#mainbronze" data-rel="back" data-icon="home" class="ui-btn-left" data-theme="b">Home</a>
+			</div>
+			
+			
+			
+			<div id='minform' data-role="content">
+				
+			<h2>Sign Up</h2>
+				
+			<form class="cmxform" method='post' action="" id="minsignup">
+			<fieldset>
+					
+				<div data-role="fieldcontain">
+					<label for="fname">First Name</label>
+					<input type="text" data-theme='c' name="fname" id="fname" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="lname">Last Name</label>
+					<input type="text"  data-theme='c' name="lname" id="lname" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="email">Email</label>
+					<input type="email" data-theme='c' name="email" id="email" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="tel">Phone Number</label>
+					<input type="tel"  data-theme='c' name="tel" id="tel" placeholder="123-456-7890" class="required" />
+				</div>
+		
+					<div id='radio' data-role="fieldcontain">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+					<legend>Sex</legend>
+						<input type="radio" value="Male" name="radio" id="male" data-theme="d" />
+						<label for="male">Male</label>
+						<input type="radio" value="Female" name="radio" id="female"  data-theme="d"/>
+						<label for="female">Female</label>
+					</fieldset>	
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="ease">Ease of Use</label>
+					<p id="timeattending">How easy was this sign up process?</p>
+					<input type="range" min="0" max="10" step="1" name="speed" id="ease" value="5" data-theme="b" />
+				</div>
+				
+				<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<label>
+								Have you been Baptized?(Leave Blank for No.)
+							</label>
+							<input type="checkbox" name="checkbox-1"  data-theme='c' id="checkbox-1" class="custom" />
+							<label for="checkbox-1">Yes</label>
+						</fieldset>
+				</div>
+	
+				
+				<div id='select' data-role="fieldcontain">
+					<label for="ministries">Ministries</label>
+					<p id="minselect">Please Select the Ministry You Are Interested In </p>
+						<select name="ministry" id="dropdown" data-theme="d"  data-native-menu="false" class="required" >
+							<option data-placeholder="true">Please Select One</option>
+							<optgroup label="Ministries">
+								<option value="men">Men</option>
+								<option value="Women">Women</option>
+								<option value="Teens">Teens</option>
+								<option value="Children">Children</option>
+								<option value="Seniors">Seniors</option>
+								
+											</optgroup>
+						</select>
+					</label>
+				</div>
+				<div data-role="fieldcontain">
+					<input type="submit" id='submit' value="Submit" data-theme="b" data-icon="check" data-iconpos="right" />
+					<input type="reset" value="Reset" data-theme="e" data-icon="back" data-iconpos="right" />
+				</div>
+				
+			</fieldset>	
+				
+			</form>
+			
+			</div>
+			
+			<div data-role="footer" data-theme="a">
+				<div align="center"><p id="closing">Cheryl Ferguson MiU 1206</p></div>
+			</div>	
+			
+		</div>
+		
+<script type="text/javascript" src="js/json.js"></script>				
+<script type="text/javascript" src="js/main.js"></script>				
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>		
+<script type="text/javascript" src="js/ps/klass.min.js"></script>
+<script type="text/javascript" src="js/ps/code.photoswipe-3.0.1.min.js"></script>
+<script type="text/javascript" src="js/ps.js"></script>
+
+		
+			
+	
+
+	</body>
 </html>
