@@ -10,11 +10,11 @@ Cheryl Ferguson
 		<meta charset="utf-8">
 
 		<!--Description and Keywords Meta-->
-		<meta name="descrtiption" content="On a Ministry Mission">
+		<meta name="description" content="On a Ministry Mission">
 		<meta name="keywords" content="directory, html5, Full Sail University">
 
 		<!-- Robot Meta Instructions-->
-		<meta name="robots" content="noindex, nofollow">
+		<meta name="robots" content="no index, nofollow">
 
 		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 		<meta name="HandheldFriendly" content="True">
@@ -22,19 +22,29 @@ Cheryl Ferguson
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 		<!-- Mobile IE needs ClearType for smoothing fonts -->
-		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="clear type" content="on">
 
 		<!--Page Title-->
 		<title>Ministry N Motion</title>
-
+		<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 		<!-- Link CSS -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" />
-
-		<!--Modernizr JavaScript Template-->
-		<script src="js/libs/modernizr.custom.min.js"></script>
 		
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/ios_inspired/styles.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" />
+		 <link rel="stylesheet" type="text/css" href="twitterplugin/jScrollPane/jScrollPane.css" />
+		 
+				
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript" src="twitterplugin/jScrollPane/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="twitterplugin/jScrollPane/jScrollPane-1.2.3.min.js"></script>
+        <script type="text/javascript" src="twitterplugin/script.js"></script>
+		
+        <!--Modernizr JavaScript Template-->
+		<script src="js/libs/modernizr.custom.min.js"></script>
 
 	</head>
 	<body>
@@ -42,13 +52,16 @@ Cheryl Ferguson
 		<!--Main Page-->
 		<div data-role="page" id="home">
 		<header>
+					
+		</header>			
+			<div data-role="content">
+
 			<div data-role="header" align="center">
 			<img class="100"  src="images/logo.png" /></a>
 		
 		</div>
-		
-		</header>			
-			<div data-role="content">
+
+
 
 				<div>
 
@@ -57,11 +70,11 @@ Cheryl Ferguson
 				</div>
 					
 				<div class= "feature">
-					<a href='#joinusForm' data-ajax="false" align= "center" title="Join Us!"><img src= "images/cta.png"></a>
+					<a href='joinusForm.html' rel="external" data-ajax="false" align= "center" title="Join Us!"><img src= "images/cta.png"></a>
 				</div>
 				<br>
 				<div>
-					<ul data-role="listview" data-inset="true" data-filter="true" data-theme="d">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
 						<li><a href="#connect">Connect with us!</a></li>
 						<li><a href="#grow">Grow with us!</a></li>
 						<li><a href="#more">More information!</a></li>
@@ -74,30 +87,38 @@ Cheryl Ferguson
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
-			</div>		
+			</div>
+			  <p class="copyright">Cheryl Ferguson MiU 1208</p>		
 		</div>
 	</div>
 	<!--Connections Page-->
-	
-		<div data-role="page" id="connect" data-add-back-btn="true">	
-		<header>
+	<div data-role="page" id="connect" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Connections</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+			<!--<img class="25"   align="left" src="images/logo.png" />-->
+	</div>
+	<br>
+	<!--<div data-role="page" id="connect" data-add-back-btn="true">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>	
+		
 		
 			<div data-role="header" align="center">
 			<img class="100"  src="images/logo.png" /></a>
-				<h1>Connections</h1>
-		</header>
-	
-	
-				
+				<h1>Connections</h1>-->
+		
 				<div data-role="content">
-				
+				<div class= "logo">
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>				
+					</div>
 					<br>
 					<div>
-						<ul data-role="listview" data-inset="true" data-filter="false" data-theme="d">
+						<ul data-role="listview" data-inset="true" data-filter="true" data-theme="d">
 							<li>
 								
 						<div data-role="collapsible" data-collapsed="true">
@@ -120,15 +141,38 @@ Cheryl Ferguson
                    			<p>What we value</p>
             			</div>
             	
-            			<div data-role="collapsible" data-collapsed="true">
+            			<div data-role="collapsible" data-collapsed="true" data-theme="e">
                     		<h3>History</h3>
-                    		<p>About Us</p>
-            			</div>
+                    			<div class="detail" id="aboutus" data-theme="e">
+                    			
+						        <h1>About Us</h1>
+							</div>
+						        <ul> 
+						           <li><a href="https://www.facebook.com/FullSailUniversity" rel= "external"><img src="images/facebook.png" width="18" height="18" alt="Follow Us on Facebook"><br />Like Us</a>  <br>
+						</a>
+									<a href="#twitter" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false"><img src="images/twitter.png" width="18" height="18" alt="Visit our Twitter Feed"><br />Twitter Feed</a>
+						</a></li>
+						         </ul> 
+						    				
+						        <p>Here you can find out more information about us.</p>
+						        
+						        <p>Mailing Address:
+						        
+						        555 Righteous Way
+						        Washington, DC 63421</p>
+						        
+						        <p>Phone:
+						        123-456-7890</p>
+						        
+						        <p>Email:
+						        yourname@domain.com</p>
+							
+							</div>     		
             			
             			<div data-role="collapsible" data-collapsed="true">
                     		<h3>Contact Us</h3>
-                    		<a href="#staff">How to reach us</a>
-                    		
+                    		<div class="detail" id="staff" data-theme="a">  
+                    		</div>           		
             			</div>
             			<div data-role="collapsible" data-collapsed="true">
 							<h3>Upcoming Events</h3>
@@ -157,27 +201,38 @@ Cheryl Ferguson
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 
 				</ul>
-			</div>		
+			</div>	
+			   <p class="copyright">	Cheryl Ferguson MiU 1208</p>	
 		</div>
 	</div>
 	<!--Grow Page-->
-	
+	<div data-role="page" id="grow" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Grow With Us!</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>
 			
-	<div data-role="page" id="grow" data-add-back-btn="true">	
+	<!--<div data-role="page" id="grow" data-add-back-btn="true">	
 		<header>
 		
 			<div data-role="header" align="center">
 			<img class="100"  src="images/logo.png" /></a>
 				<h1>Grow with US!!</h1>
-		</header>
+		</header>-->
 			
 			
 			<div data-role="content">
+			
+			<div class= "logo">
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>
+
+			</div>
 				
 				 <ul data-role="listview" data-inset="false" data-filter="false" data-theme="d"></ul>
 				<br>
@@ -205,33 +260,42 @@ Cheryl Ferguson
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>				
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>				
 					</ul>			
-				</div>		
+				</div>	
+				   <p class="copyright">Cheryl Ferguson MiU 1208</p>	
 		</div>
 	</div>
 	<!--More Page-->
-			
-	<div data-role="page" id="more" data-add-back-btn="true">	
+	<div data-role="page" id="more" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>More</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>		
+	<!--<div data-role="page" id="more" data-add-back-btn="true">	
 		<header>
 		
 			<div data-role="header" align="center">
 			<img class="100"  src="images/logo.png" /></a>
 				<h1>More</h1>
-		</header>
+		</header>-->
 			
 				
 				<div data-role="content">
 				
+				
+				
 				<div class= "logo">
-					
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>
+
 				</div>
 					
 				<div data-role ="collapsible-set">
             <div data-role="content">
-            	 <ul data-role="listview" data-filter="true" data-theme="d">
+            	 <ul data-role="listview" data-filter="false" data-theme="d">
                      <li>
                         <a href="https://www.google.com/calendar/htmlembed?src=usa__en@holiday.calendar.google.com&gsessionid=OK" class="has-icon" >
                         <img src="images/Calendar.png" class="ui-li-thumb"/>
@@ -240,18 +304,11 @@ Cheryl Ferguson
                     </li>
                     
                     <li>
-                       <a href="#error" class="has-icon" >
-                        <img src="images/Media.png" class="ui-li-thumb"/>
-                        <h3>Facebook</h3>
+                       <a href="#twitter" class="has-icon" data-theme="e">
+                        <img src="images/twitter.png" class="ui-li-thumb"/>
+                        <h3>Twitter</h3>
 					   </a>
-                    </li>
-                     <!--<li>
-                       <<a href="http://itde.vccs.edu/rss2js/feed2js.php?src=http%3A%2F%2Fwww.youthworker.com%2Fyouth-ministry-resources-ideas%2Fyouth-culture-news%2Fdefault.xml&chan=title&num=5&desc=1&date=y&targ=y&html=y"></a> 
-                        <img src="images/Media.png" class="ui-li-thumb"/>
-                        <h3>Youth Ministry</h3>
-					   </a>
-                    </li>-->
-                	
+                    </li>                	
                 	<li>
                         <a href="http://www.youversion.com/bible/jer.29.kjv" class="has-icon" >
                         <img src="images/youverisonBible.png" class="ui-li-thumb"/>
@@ -261,28 +318,137 @@ Cheryl Ferguson
                 
                  </ul>
 			</div>
-        </div>	
-			
-		<div data-role="footer" data-position="fixed">
+        </div>
+   <div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>				
+					</ul>			
+				</div>	
+				   <p class="copyright">Cheryl Ferguson MiU 1208</p>	
+		</div>
+	</div>	
+ <!--Social Media-->
+  <div data-role="page" id="facebook" data-theme="d">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Social Media</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>
+    	<div data-role="navbar" data-theme="e" >
+         		<ul> 
+	         		<li><a href="https://www.facebook.com/FullSailUniversity" rel= "external"><img src="images/facebook.png" width="18" height="18" alt="Follow Us on Facebook"><br />Like Us</a>
+</a></li>
+				<li><a href="#twitter" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false"><img src="images/twitter.png" width="18" height="18" alt="Visit our Twitter Feed"><br />Twitter Feed</a>
+</a></li>
+         		</ul> 
+         </div>	
+	<div data-role="content" data-theme="d">	
+	
+	<div class= "logo">
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>
+
+				</div>
+
+	
+	
+		<p>We are on Facebook and Twitter to keep you constantly informed.  </p>
+  
+	</div>
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>				
 				</ul>			
 			</div>		
-		</div>
+	</div>	
+         <p class="copyright">Cheryl Ferguson MiU 1208</p>
 	</div>
+</div>
+<!--Twitter-->
+<div data-role="page" id="twitter" data-theme="d">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Tweets</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>
+    <div data-role="navbar" data-theme="e" >
+         <ul> 
+             <li><a href="https://twitter.com/Fullsail" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" target="_blank"><img src="images/twitter.png" width="18" height="18" alt="Follow Us on Twitter"><br />Follow Us</a>
+</a></li>
+			<li><a href="#twitter" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false"><img src="images/twitter.png" width="18" height="18" alt="Visit our Twitter Feed"><br />Twitter Feed</a>
+</a></li>
+         </ul> 
+    </div>	
+	<div data-role="content" data-theme="d">	
+	
+	<div class= "logo">
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>
+				</div>
+
+		<h4>Stay up to date with our latest tweets</h4>	
+        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+			new TWTR.Widget({
+			  version: 2,
+			  type: 'profile',
+			  rpp: 4,
+			  interval: 30000,
+			  width: 250,
+			  height: 300,
+			  theme: {
+				shell: {
+					background: '#5998c9',
+					color: '#ffffff'
+				},
+				tweets: {
+					background: '#faeca4',
+					color: '#030303',
+					links: '#1b6394'
+				}
+			  },
+			  features: {
+				scrollbar: false,
+				loop: false,
+				live: false,
+				behavior: 'all'
+			  }
+			}).render().setUser('Fullsail').start();
+        </script>
+	</div><div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>				
+				</ul>			
+			</div>		
+	</div>	
+         <p class="copyright">Cheryl Ferguson MiU 1208</p>
+	</div>
+</div>
+
 <!-- Contact Page-->
-			
-	<div data-role="page" id="error" data-add-back-btn="true">	
-		<header>
+	<div data-role="page" id="errors" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Oops!</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>	
 		
-			<div data-role="header" align="center">
-			<img class="100"  src="images/logo.png" /></a>
-				<h1>Oops!</h1>
-		</header>
+		<div class= "logo">
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>
+
+					
+				</div>
+	
 		
 			<center>Sorry, Under Construction!</center>
 			<p>  We are working feverishly to make this page available.  Please check back and refresh your browser if it has been more than a week.  
@@ -299,23 +465,22 @@ Cheryl Ferguson
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
 
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>				
 				</ul>
-			</div>		
+			</div>
+			  <p class="copyright">Cheryl Ferguson MiU 1208</p>		
 		</div>
 	</div>
 <!--Staff Page-->
+	<div data-role="page" id="staff" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Staff</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>
 	
-	<div data-role="page" id="staff" data-add-back-btn="true">	
-		<header>
-		
-			<div data-role="header" align="center">
-			<img class="100"  src="images/logo.png" /></a>
-				<h1>Church Staff Contact Information</h1>
-		</header>		
-				
 				<div data-role="content">
 				
 				<div class= "logo">
@@ -346,21 +511,28 @@ Cheryl Ferguson
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
 			</div>		
 		</div>
 	</div>
 	<!--Emergency Contact Page-->
-	<div data-role="page" id="emergency" data-add-back-btn="true">	
+	
+	<div data-role="page" id="emergency" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Local Resources</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>
+	<!--<div data-role="page" id="emergency" data-add-back-btn="true">	
 		<header>
 		
 			<div data-role="header" align="center">
 			<img class="100"  src="images/logo.png" /></a>
 				<h1>Local Resources</h1>
-		</header>		
+		</header>	-->	
 				
 				<div data-role="content">
 				
@@ -396,27 +568,34 @@ Cheryl Ferguson
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
 			</div>		
 		</div>
 	</div>
 
 	<!--Join Us Form-->
-	
-	<div data-role="page" id="joinusForm" data-add-back-btn="true">	
+	<div data-role="page" id="joinusForm" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Join Us!</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>
+	<!--<div data-role="page" id="joinusForm" data-add-back-btn="true">	
 		<header>
 		
 			<div data-role="header" align="center">
 			<img class="100"  src="images/logo.png" /></a>
 				<h1>Join Us!</h1>
-		</header>			
+		</header>	-->		
 				<div data-role="content">
 				
-				<!--<div class= "logo">
-					<a href='index.html' title="Home"><img src= "images/tinyLogo.jpg"></a>				</div>-->
+				<div class= "logo">
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>				
+					
+				</div>
 					
 					<form action="" method="post" id="addLogItem">
 
@@ -461,22 +640,61 @@ Cheryl Ferguson
 						<div data-role="fieldcontain">
 							<fieldset data-role="controlgroup">
 								<legend>*Gender:</legend>
-								<input type="radio" value="Male" name="sex" id="male" class="required" />
+								<input type="checkbox" value="Male" name="sex" id="male" class="required" />
 								<label for="male">Male</label>
-								<input type="radio" value="Female" name="sex" id="female" />
+								<input type="checkbox" value="Female" name="sex" id="female" />
 								<label for="female">Female</label>
 							</fieldset>
 						</div>
-
-						<div data-role="fieldcontain">
+						
+					<!--	<legend></legend>
+							<h3 id="browse">How can we serve you?</h3><!-- Responsive Disclosure -->
+							<!--<ul>
+								<li><label class="radio" for="kids" id="k">Kids? </label><input value="Kids" type="radio" name="verify" id="kids" /></li>								
+								<li><label class="radio" for="prayer" id="p">Prayer? </label><input value="Prayer" type="radio" name="verify" id="prayer" /></li>
+								<li><label class="radio" for="assistance" id="a">Assistance? </label><input value="Assistance" type="radio" name="verify" id="assistance" /></li>
+							</ul>
+							<div id="responsiveK">
+								<h4 id="browse">How many kids?</h4>
+								<ul>
+									<input type="range" name="kids" id="kids" value="2" min="1" max="10"/>
+									
+								</ul>
+								<br>
+							</div>
+							<div id="responsiveP">
+								<h4 id="browse">What can we pray with you for?</h4>
+								<ul>
+									<textarea name="prayerbox" id="prayerbox"></textarea>
+								</ul>
+								<br>
+							</div>
+							<div id="responsiveA">
+								<h4 id="browse">Assistance?</h4>
+								<ul>
+									<li><label class="radio" for="financial" id="f">Financial? </label><input value="Financial" type="radio" name="verify" id="financial"/></li>
+								<li><label class="radio" for="housing" id="h">Housing? </label><input value="Housing" type="radio" name="verify" id="housing" /></li>
+								<li><label class="radio" for="eduemp" id="e">Education/Employment? </label><input value="Eduempe" type="radio" name="verify" id="eduemp" /></li>
+								</ul>
+								<br>
+							</div><!--End Responsive Disclosure-->
+						
+						
+						
+						
+						
+						
+						
+						
+						<!--<div data-role="fieldcontain">
 							<label for="kids">How many kids do you have?:</label>
-							<input type="range" name="kids" id="kids" value="5" min="1" max="10"/>
+							<input type="range" name="kids" id="kids" value="2" min="1" max="10"/>
 						</div>
 
 						<div data-role="fieldcontain">
 							<label for="comments">Any Comments:</label>
 							<textarea name="comments" id="comments"></textarea>
-						</div>
+						</div>-->
 						
 						<div data-role="fieldcontain">
 							<label>*Today's Date</label>
@@ -501,46 +719,61 @@ Cheryl Ferguson
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
 			</div>		
 		</div>
 	</div>
 
 <!-- List Page -->
-		
-				
-	<div data-role="page" id="list" data-add-back-btn="true">	
-		<header>
-		
-			<div data-role="header" align="center">
-			<img class="100"  src="images/logo.png" /></a>
-				<h1>Recent Additions</h1>
-		</header>
-		
-		
-	
-				<a href="#add" id="clear" data-icon="delete" class="ui-btn-right">Clear List </a>
-			</div>
-			<div class= "logo">
-					<a href='index.html' title="Home"></a>
-				</div>
+	<div data-role="page" id="list" data-theme="c">
+	<div data-role="header" data-theme="a">
+		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+        <h1>Register</h1>
+        <a href="photogallery.html" rel="external">Photo Gallery</a>
+	</div>		
+						
+			
 			<!-- Content -->
 			<div data-role="content" id="listContent">
-				<!-- Item list generated via JS -->
-				<ul data-role="listview" id="logitemList" data-split-icon="delete" data-filter="true">
-				</ul>
+			
+			<div class= "logo">
+					<a href='index.html' title="Home"><img src= "images/logo.png"></a>	
 			</div>
+
+			<!--Registration Form /Responsive Disclosure-->
+	<form action="#" method="post" id="theForm">
+        <fieldset><legend>Register</legend>
+			<p>All fields are required.</p>
+			<div class="two"><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" required></div>
+			<div class="two"><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName" required></div>
+			<div class="two"><label for="email">Email Address</label><input type="email" name="email" id="email" required></div>
+			<div class="two"><label for="phone">Phone Number<span class="tooltip">In the format XXX XXX XXXX or XXX-XXX-XXXX or XXXXXXXXXX.</span></label><input type="text" name="phone" id="phone" required></div>
+			<div class="two"><label for="city">City</label><input type="text" name="city" id="city" required></div>
+			<div class="two"><label for="state">State</label><select name="state" id="state">
+				<option value="">Select a State</option> 
+				<option value="DC">Washington, DC</option> 
+				<option value="MD">Maryland</option> 
+				<option value="VA">Virginia</option> 
+				        
+			</select></div>    
+			<div class="two"><label for="zip">Zip Code</label><input type="text" name="zip" id="zip" required></div>
+			<div class="one"><input type="checkbox" name="terms" id="terms" required> I agree my information is correct.</div>
+			<div class="one"><input type="submit" value="Register" id="submit"></div>
+        </fieldset>
+    </form>
+			
+				
 
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
 			</div>		
 		</div>
