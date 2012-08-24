@@ -1,0 +1,18 @@
+.dropshadow  {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	box-shadow: 2px 2px 5px #0c0f06;
+}
+.copyright {
+	font-size: .8em;
+	text-align: center;
+}
+img {
+	border-left-width: 1px;
+	box-shadow: 2px 2px 5px #666;
+}
+.thumbnails {
+	margin-left: 80px;
+	margin-top: 40px;
+}

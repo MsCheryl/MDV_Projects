@@ -13,7 +13,7 @@
 		<meta name="keywords" content="membership,directory,religion, html5, Full Sail University">
 
 		<!-- Robot Meta Instructions-->
-		<meta name="robots" content="noindex, nofollow">
+		<meta name="robots" content="no index, nofollow">
 
 		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 		<meta name="HandheldFriendly" content="True">
@@ -28,7 +28,15 @@
 
 		<!-- Link CSS -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		 
+		 <link rel="stylesheet" type="text/css" href="css/advanced.css" />
+		 <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" />
+		 <link rel="stylesheet" type="text/css" href="twitterplugin/jScrollPane/jScrollPane.css" />
+		 
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript" src="twitterplugin/jScrollPane/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="twitterplugin/jScrollPane/jScrollPane-1.2.3.min.js"></script>
+        <script type="text/javascript" src="twitterplugin/script.js"></script>
 
 		<!--Modernizr JavaScript Template-->
 		<script src="js/libs/modernizr.custom.min.js"></script>
@@ -40,7 +48,7 @@
 	<body>
 		<!-- Page Content Lives here. -->
 
-		<div data-role="page" id="home">
+		<div data-role="page" id="home" data-theme="b">
 			<div data-role="header" data-position="fixed">
 				<h1>Ministry N Motion</h1>
 			</div>
@@ -64,71 +72,32 @@
 					<a href='additem.html' data-ajax="false" align= "center" title="JoinUs"><img src= "images/cta.png"></a>
 				</div>
 				<br>				
-				<div data-role="content" data-theme="c">	
+				<div data-role="content" data-theme="b">	
 					<ul data-role="listview">
 						<li><a href="#connect"><img src="images/lifeGroupslogo.png" width="70" height="80" alt="Life Groups ">Connect<span class="ui-li-count">3</span></a></li>
 						<li><a href="#grow"><img src="images/abundantlife.png" width="70" height="80" alt="Abundant Life ">Grow<span class="ui-li-count">2</span></a></li>
 						<li><a href="#more"><img src="images/adult.png" width="70" height="80" alt="Info">More</a></li>
-						<li><a href="#social"><img src="images/social" width="70" height="80" alt="Media">Media</a></li>
-		</ul>		
-	</div>
-					<!--<div class="tab1">
-							<div class="ui-grid-b">
-								<div class="ui-block-a">
-									<a href="#connect"> 
-										<img src="images/lifeGroupslogo.png"  />
-										<h3>Connect</h3>
-									</a>
-								</div>
-								<div class="ui-block-b">
-									<a href="#grow">
-										<img src="images/abundantlife.png" />
-										<h3>Grow</h3>
-									</a>
-								</div>
-								<div class="ui-block-c">
-									<a href="#more">
-										<img src="images/adult.png"/>
-										<h3>More</h3>
-									</a>
-								</div>
-							</div>
-					</div>
-					<br>
-					<div class="tab2">
-							<div class="ui-grid-b">
-								<div class="ui-block-a">
-									<a href="undercon.html" rel="external">
-										<img src="images/Impact1.png" />
-										<h3>Youth</h3>
-									</a>
-								</div>
-								<div class="ui-block-b">
-									<a href="undercon.html" rel="external">
-										<img src="images/pulse1.png" />
-										<h3>Children</h3>
-									</a>
-								</div>
-							</div><!-- /grid-b -->
-					</div>	
+						<li><a href="#social"><img src="images/media.png" width="70" height="80" alt="Media">Media</a></li>
+					</ul>		
 				</div>
-			</div>
-	</div>	
+		</div>	
+				
+		
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
 
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
 			</div>		
 		</div>
-	</div>
+	
 
-	<div data-role="page" id="connect" data-add-back-btn="true">	
-		<header>
+	<div data-role="page" id="connect" data-add-back-btn="true" data-theme="d">	
+		
 		
 			<div data-role="header" align="center">
 			<img class="100"  src="images/logo.png" /></a>
@@ -136,15 +105,13 @@
 			</a>
 				<h1>Support on your Christian Journey</h1>
 				<a href="photogallery.html" rel="external">Photo Gallery</a>
-		</header>				
+						
 		
-		<div data-role="content">
+		<div data-role="content" data-theme="d">
 				
-				<!--<div class= "logo">
-					<a href='index.html' title="Home"><img src= "img/logo.png"></a>
-				</div>-->
+			
 					
-						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+						<div data-role="collapsible" data-collapsed="true" data-theme="d">
 							<h3>Life Groups have been put in place to group you with those with like interests.</h3>
 							<ul>
 								<li>
@@ -158,36 +125,50 @@
 								</li>
 							</ul>
 						</div>
+						<div data-role="collapsible" data-collapsed="true" data-theme="d">
+							<h3>Bible Study</h3>
+							<ul>
+								<li>
+									<h3>Youth</h3>
+									<img src= "images/pulse.png">
+								</li>
+								
+								<li>
+									<h3>Adults</h3>
+									<img src="images/adult.png">
+								</li>
+							</ul>
+						</div>
+				</div>
+		</div>
 	<!--Connect Footer-->			
 			<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
 
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
 			</div>		
 		</div>
 	</div>
-		
-	<!--Grow Page-->
+			
+<!--Grow Page-->
+	<br>
 	<div data-role="page" id="grow" data-add-back-btn="true">
-		
-		<header>
-		
-			<div data-role="header" align="center">
-			<img class="100"  src="images/logo.png" /></a>
-				<h1>Growing In Faith</h1>
-		</header>		
+			<div data-role="header" data-position="fixed">
+				<h1>Growing in Faith</h1>
+			</div>
+			
 				
 				<div data-role="content">
 				
-				<div class= "logo">
+				<!--<div class= "logo">
 					<a href='index.html' title="Home"><img src= "images/logo.png"></a>
-				</div>
-						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+				</div>-->
+						<div data-role="collapsible" data-collapsed="true" >
 							<h3>Common Prayers</h3>
 							<ul>
 								<li>
@@ -218,35 +199,36 @@
 								</li>
 							</ul>
 						</div>
+				</div>
+	</div>
 		<!--Footer-->
 			<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
-				</ul>
-			</div>		
-		</div>
-	</div>
-	
-	<div data-role="page" id="more" data-add-back-btn="true">	
-		<header>
-		
-			<div data-role="header" align="center">
-			<img class="100"  src="images/logo.png" /></a>
-				<h1>More</h1>
-		</header>				
-		
-		<div data-role="content">
-				
-				<!--<div class= "logo">
-					<a href='index.html' title="Home"><img src= "img/logo.png"></a>
-				</div>-->
+					<div data-role="navbar">
+						<ul>
 					
-						<div data-role="collapsible" data-collapsed="true" data-theme="b">
+
+							<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+							<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+							<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+							<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
+						</ul>
+
+					</div>		
+				</div>	
+		</div>		
+<!--More-->	
+	<div data-role="page" id="more" data-add-back-btn="true" >	
+			<div data-role="header" data-theme="a">
+				<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+				<h1>More</h1>
+				<a href="photogallery.html" rel="external">Photo Gallery</a>
+			</div>			
+		
+					<div data-role="content">
+				
+				
+					
+						<div data-role="collapsible" data-collapsed="true" data-theme="d">
 							<h3>Life Groups have been put in place to group you with those with like interests.</h3>
 							<ul>
 								<li>
@@ -260,55 +242,60 @@
 								</li>
 							</ul>
 						</div>
+					</div>	
+	</div>
+						
 	<!--More Footer-->			
 				<div data-role="footer" data-position="fixed">
 					<div data-role="navbar">
 						<ul>
-					</ul>
+					
 
-					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
-					</ul>
+							<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+							<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+							<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+							<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
+						</ul>
 
 					</div>		
 				</div>
-			</div>
-		</div>
+			
 
  <!--Social Media-->
-  <div data-role="page" id="social" data-theme="c">
-	<div data-role="header" data-theme="a">
-		<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
-        <h1>Social Media!</h1>
-        <a href="photogallery.html" rel="external">Photo Gallery</a>
-	</div>
-    <div data-role="navbar" data-theme="e" >
-         <ul> 
-             <li><a href="https://www.facebook.com/FullSailUniversity" rel= "external"><img src="images/facebook.png" width="18" height="18" alt="Follow Us on Facebook"><br />Like Us</a>
+  <div data-role="page" id="social" data-theme="e">
+			<div data-role="header" data-theme="a">
+				<a href="#home" data-rel="back" data-icon="arrow-l">Back</a>
+		        <h1>Social Media!</h1>
+		        <a href="photogallery.html" rel="external">Photo Gallery</a>
+			</div>
+		    
+			<div data-role="navbar" data-theme="e" >
+				<ul> 
+					<li><a href="https://www.facebook.com/FullSailUniversity" rel= "external"><img src="images/facebook.png" width="18" height="18" alt="Follow Us on Facebook"><br />Like Us</a>
 </a></li>
-			<li><a href="#twitter" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false"><img src="images/twitter.png" width="18" height="18" alt="Visit our Twitter Feed"><br />Twitter Feed</a>
+					<li><a href="#twitter" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false"><img src="images/twitter.png" width="18" height="18" alt="Visit our Twitter Feed"><br />Twitter Feed</a>
 </a></li>
-         </ul> 
-    </div>	
-	<div data-role="content" data-theme="d">	
-		<p>We are on Facebook and Twitter to keep you constantly informed.  </p>
+         		</ul> 
+         	</div>	
+	
+         	<div data-role="content" data-theme="d">	
+	         	<p>We are on Facebook and Twitter to keep you constantly informed.  </p>
   
-	</div>
-	<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>				
-					</ul>			
-				</div>		
-		</div>	
-         <p class="copyright">Cheryl Ferguson MiU 1208</p>
-	</div>
-</div>
+	         </div>
+				<div data-role="footer" data-position="fixed">
+						<div data-role="navbar">
+							<ul>
+								<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+								<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+								<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+								<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>				
+							</ul>			
+						</div>		
+				</div>	
+			         <p class="copyright">Cheryl Ferguson MiU 1208</p>
+			</div>
+		</div>
+	</div>	
 <!--Twitter Page-->
 <div data-role="page" id="twitter" data-theme="d">
 	<div data-role="header" data-theme="a">
@@ -351,7 +338,7 @@
 				live: false,
 				behavior: 'all'
 			  }
-			}).render().setUser('JqmTravel').start();
+			}).render().setUser('Fullsail').start();
         </script>
 	</div>
 	
@@ -361,9 +348,9 @@
 				<ul>
 					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
 
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
-					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
-					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
+					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week4/goldapp/index.html" data-icon="grid">Gold App</a></li>
+					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week4" data-icon="grid"> Git Repo</a></li>
 				</ul>
 			</div>		
 
@@ -373,6 +360,7 @@
 	  <p class="copyright">Cheryl Ferguson MiU 1208</p>
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/json.js"></script>
 		<script type="text/javascript" src="js/form.js"></script>
 		
