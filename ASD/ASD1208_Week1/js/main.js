@@ -67,14 +67,14 @@ var storeData = function(data){
 }; 
 
 var	deleteItem = function (){
-    var ask = confirm("Are you sure you want to delete this log entry?");
+    var ask = confirm("Are you sure you want to delete this entry?");
     var key = localStorage.key();
     if(ask){
         localStorage.removeItem(key);
-        alert("Log Entry was deleted.");
+        alert("Entry was deleted.");
 
     }else{
-        alert("Log entry was Not deleted.");
+        alert("Entry was Not deleted.");
     };
 
 };
@@ -83,7 +83,7 @@ var clearLocal = function () {
     if (localStorage.length === 0) {
         alert("There is no data to clear.");
     } else {
-        var ask = confirm("Deleting ALL log items? This can NOT be undone.");
+        var ask = confirm("Delete all items? This can NOT be undone.");
         if (ask) {
             localStorage.clear();
             alert("All log items are deleted!");
