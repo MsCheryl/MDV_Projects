@@ -1,4 +1,11 @@
+
+$(document).ready(function(){
+    alert("Welcome to MINISTRY N Motion!  Where we are on a mission to <em>Call the Capital to Christ!</em>);
+});
+
+
 $('#home').on('pageinit', function(){
+}
 	//code needed for home page goes here
 });
 

@@ -31,7 +31,7 @@ Cheryl Ferguson
 		<!-- Link CSS -->
 		
 		
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" /> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" />
 		 		<!--<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script> -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
@@ -126,12 +126,17 @@ Cheryl Ferguson
 						</select>
 					</div>
 						<div data-role="fieldcontain">
-							<label for="kids">How many kids do you have?:</label>
-							<input type="range" name="kids" id="kids" value="2" min="1" max="10"/>
-						</div>
+							<label for="kidRange">How many kids do you have?:</label>
+							<input type="range" name="kidRange" id="kidRange" value="2" min="1" max="10"onchange = "showNumber(this.value)"/> <span id="ease">0</span>
+                            <script type="text/javascript">
+                                function showNumber(newNumber){
+                                    $("range").innerHTML = newNumber;
+                                }
+                            </script>
+                        </div>
 						<div data-role="fieldcontain" id="Children">  
-					<label for="type">Kids: </label>
-					<select name="type" id="type" data-theme="c" >
+					<label for="kidType">Kids: </label>
+					<select name="type" id="kidType" data-theme="c" >
 						<option data-placeholder="true">--Select One--</option>
 							<option value="Daycare">Daycare</option>
 							<option value="Tutoring">Tutoring</option>
@@ -140,8 +145,8 @@ Cheryl Ferguson
 					</select>
 				</div>
 				<div data-role="fieldcontain" id="Adults">
-					<label for="type">Assistance: </label>
-					<select name="type" id="type" data-theme="c" >
+					<label for="assistType">Assistance: </label>
+					<select name="type" id="assistType" data-theme="c" >
 						<option data-placeholder="true">--Select One--</option>
 							<option value="Prayer">Prayer</option>
 							<option value="Clothing">Clothing</option>
@@ -186,7 +191,7 @@ Cheryl Ferguson
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+					<li><a href="#home" rel="external" class="ui-btn-active" data-icon="home">Home</a></li>
 					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/bronzeapp/index.html" data-icon="info">Bronze App</a></li>
 					<li><a href="http://mscheryl.github.com/MDV_Projects/MiU_1208_Week3/goldapp/index.html" data-icon="grid">Gold App</a></li>
 					<li><a href="https://github.com/MsCheryl/MDV_Projects/tree/master/MiU_1208_Week3" data-icon="grid"> Git Repo</a></li>
@@ -197,7 +202,7 @@ Cheryl Ferguson
 	
 	
 	
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
 		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
