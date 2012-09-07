@@ -1,0 +1,87 @@
+{"items": {
+
+	"0": {
+		"fname": ["First Name:", "Betty"],
+		"lname": ["Last Name:", "Marshall"],
+		"date1": ["Connection Date:", "06/1/1954"],
+        "email": ["Email:","blubam524@aol.com"],
+        "sex": ["Male or Female:", "Female"],
+        "date2": ["Submit Date:","09/01/2012"],
+		"submitTime": ["Current Time:", "11:00"],
+		"kidRange": ["kidRange:", "1"],
+		"comments":	["Comments:", "Interested in...."]
+	},
+
+	"1": {
+        "fname": ["First Name:", "Clydia"],
+        "lname": ["Last Name:", "Bishop"],
+        "date1": ["Connection Date:", "11/10/1954"],
+        "email": ["Email:","clydia@aol.com"],
+        "sex": ["Male or Female:", "Female"],
+        "date2": ["Submit Date:","09/01/2012"],
+        "submitTime": ["Current Time:", "11:01"],
+        "kidRange": ["kidRange:", "2"],
+        "comments":	["Comments:", "Interested in..."]
+	},
+	
+	"2": {
+        "fname": ["First Name:", "Curlie"],
+        "lname": ["Last Name:", "Williams"],
+        "date1": ["Connection Date:", "01/01/1950"],
+        "email": ["Email:","curliewilliams123@aol.com"],
+        "sex": ["Male or Female:", "Female"],
+        "date2": ["Submit Date:","09/01/2012"],
+        "submitTime": ["Current Time:", "11:03"],
+        "kidRange": ["kidRange:", "3"],
+        "comments":	["Comments:", "Interested in..."]
+	},
+	
+	"3": {
+        "fname": ["First Name:", "Latisha"],
+        "lname": ["Last Name:", "Lewis"],
+        "date1": ["Connection Date:", "05/10/1999"],
+        "email": ["Email:","ldlewis@msn.com"],
+        "sex": ["Male or Female:", "Female"],
+        "date2": ["Submit Date:","09/01/2012"],
+        "submitTime": ["Current Time:", "11:10"],
+        "kidRange": ["kidRange:", "1"],
+        "comments":	["Comments:", "Interested in..."]
+	},
+	
+	"4": {
+        "fname": ["First Name:", "Jalen"],
+        "lname": ["Last Name:", "Ferguson"],
+        "date1": ["Connection Date:", "10/01/2009"],
+        "email": ["Email:","jferg@gmail.com"],
+        "sex": ["Male or Female:", "Male"],
+        "date2": ["Submit Date:","09/01/2012"],
+        "submitTime": ["Current Time:", "11:11"],
+        "kidRange": ["kidRange:", "0"],
+        "comments":	["Comments:", "College Student; VUU Class of 2014"]
+	},
+	
+	"5": {
+        "fname": ["First Name:", "Mykal"],
+        "lname": ["Last Name:", "Ferguson"],
+        "date1": ["Connection Date:", "10/01/2009"],
+        "email": ["Email:","mikeferg@gmail.com"],
+        "sex": ["Male or Female:", "Male"],
+        "date2": ["Submit Date:","09/01/2012"],
+        "submitTime": ["Current Time:", "11:12"],
+        "kidRange": ["kidRange:", "0"],
+        "comments":	["Comments:", "College Student; Del State c/o 2015; Jalen & Dominic are my brothers"]
+	},
+
+	"6": {
+        "fname": ["First Name:", "Dominic"],
+        "lname": ["Last Name:", "Ferguson"],
+        "date1": ["Connection Date:", "10/01/2009"],
+        "email": ["Email:","dominicferg@gmail.com"],
+        "sex": ["Male or Female:", "Male"],
+        "date2": ["Submit Date:","09/01/2012"],
+        "submitTime": ["Current Time:", "11:13"],
+        "kidRange": ["kidRange:", "0"],
+        "comments":	["Comments:", "HS Student; Friendship Collegiate c/o 2013"]
+	}
+}
+}
