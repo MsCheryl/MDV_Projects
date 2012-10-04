@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<entryItem>
+
+	<entry>
+		<FullName>Johnny Walker</FullName>
+		<SpouseName>Cheryl</SpouseName>
+		<Date>01/01/2012</Date>
+        <Email>augusta1@yahoo.com</Email>
+        <Gender>Male</Gender>
+		<Kids>3</Kids>
+		<Notes>Interested in...</Notes>
+    </entry>
+
+	<entry>
+        <Ful1Name>Keith Davis</Ful1Name>
+        <SpouseName>Dana</SpouseName>
+        <Date>01/17/2012</Date>
+        <Email>keithdav@msn.com</Email>
+        <Gender>Male</Gender>
+        <Kids>3</Kids>
+        <Notes>Interested in...</Notes>
+	</entry>
+
+	<entry>
+        <FullName>Darryl Cole</FullName>
+        <SpouseName>Michele</SpouseName>
+        <Date>02/10/2012</Date>
+        <Email>coleycole@verizon.net</Email>
+        <Gender>Male</Gender>
+        <Kids>3</Kids>
+        <Notes>Interested in...</Notes>
+	</entry>
+
+	<entry>
+        <FullName>Carlos Rosario</FullName>
+        <SpouseName>Lisa</SpouseName>
+        <Date>02/17/2012</Date>
+        <Email>walterslos@msn.com</Email>
+        <Gender>Male</Gender>
+        <Kids>2</Kids>
+        <Notes>Interested in...</Notes>
+	</entry>
+
+	<entry>
+        <FullName>Cyndi Rosario</FullName>
+        <SpouseName>Ric</SpouseName>
+        <Date>02/17/2012</Date>
+        <Email>cynergyFit@msn.com</Email>
+        <Gender>Female</Gender>
+        <Kids>2</Kids>
+        <Notes>Married to Carlos</Notes>
+	</entry>
+
+	<entry>
+        <FullName>Deigo Rosario</FullName>
+        <SpouseName></SpouseName>
+        <Date>02/17/2012</Date>
+        <Email> </Email>
+        <Gender>Male</Gender>
+        <Kids>0</Kids>
+        <Notes>Interested in...</Notes>
+	</entry>
+	
+	<entry>
+        <FullName>Lorenzo Rosario</FullName>
+        <SpouseName></SpouseName>
+        <Date>02/17/2012</Date>
+        <Email> </Email>
+        <Gender>Male</Gender>
+        <Kids>0</Kids>
+        <Notes>Interested in...</Notes>
+	</entry>
+</entryItem>

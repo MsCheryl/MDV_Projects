@@ -1,7 +1,113 @@
 $('#index').on('pageinit', function(){
 	//code needed for home page goes here
-});	
-		
+});
+$( '#remotesTypes' ).on('pageinit', function(){
+
+    $( '#jsonData' ).on( 'click', function () {
+        console.log("Loading info");
+        $('#viewData').empty();
+        $.ajax( {
+            url: 'data/data.json',
+            type: 'GET',
+            dataType: 'json',
+            success:function ( result ) {
+                //console.log(result);
+                for ( var i = 0, len = result.logEntry.length; i < len; i++ ) {
+                    //console.log(item);
+                    var item = result.logEntry[i];
+                    $(" "+
+                  /*  '<div class="entries">' +
+                        '<p>' + item.greeting[0]  + " " + item.greeting[1] +
+                         '<br>' + item.fullName[0]  + " " + item.fullName[1] +
+                         '<br>' + item.email[0]     + " " + item.email[1] +
+                         '<br>' + item.kids[0]      + " " + item.kids[1] +
+                         '<br>' + item.gender[0]    + " " + item.gender[1] +
+                         '<br>' + item.date[0]      + " " + item.date[1] +'</p>'+
+                    "</div>"  */
+                    "<li>"+
+                        "<h2>" +item.greeting +"</h2>"+
+                        "<p>" + item.fullName +"</p>"+
+                        "<p>" + item.email +"</p>"+
+                        "<p>" + item.kids +"</p>"+
+                        "<p>" + item.gender +"</p>"+
+                        "<p>" + item.date +"</p>"+
+                    "</li>"
+                    ).appendTo( '#viewData' );
+                    $("#viewData").listview('refresh');
+                }
+            },
+            error: function(error){
+                console.log(error);
+            }
+        });
+    });
+
+    $( '#xmlData' ).on( 'click', function() {
+        console.log("calling XML Data");
+        $('#viewData').empty();
+        $.ajax( {
+            url: 'data/data.xml',
+            type: 'GET',
+            dataType: 'xml',
+            success:function ( result ) {
+                console.log(result);
+                $(result).find('item').each(function(){
+                    var greetings = $(this).find('Greetings').text();
+                    var spouseName = $(this).find('SpouseName').text();
+                    var fullName = $(this).find('FullName').text();
+                    var kids = $(this).find('Kids').text();
+                    var gender = $(this).find('Gender').text();
+                    var date = $(this).find('Date').text();
+                    var notes = $(this).find('Notes').text();
+                    $(''+
+                        '<div class="xmlData">'+
+                            '<p>'+ greetings +
+                            '<br>'+ fullName +
+                            '<br>'+ spouseName +
+                            '<br>'+ kids +
+                            '<br>'+ gender +
+                            '<br>'+ date +
+                            '<br>'+ notes +'</p>'+
+                        '</div>'
+                    ).appendTo('#viewData');
+                });
+            }
+        });
+    });
+
+    $( '#csvData' ).on( 'click', function() {
+        $('#viewData').empty();
+        $.ajax( {
+            url: 'data/data.csv',
+            type: 'GET',
+            dataType: 'text',
+            success:function ( result ) {
+                console.log(result);
+                var lines = result.split("\n");
+                console.log(lines);
+                var dataRow = lines[0];
+                var dataCol = dataRow.split(",");
+                for (var lineNum = 1; lineNum < lines.length; lineNum++) {
+                    var row = lines[lineNum];
+                    var columns = row.split(",");
+                    console.log(columns);
+                    $(''+
+                        '<div class="csvData">'+
+                        '<p>' + dataCol[0] + " " + columns[0] +
+                        '<br>'+ dataCol[1] + " " + columns[1] +
+                        '<br>'+ dataCol[2] + " " + columns[2] +
+                        '<br>'+ dataCol[3] + " " + columns[3] +
+                        '<br>'+ dataCol[4] + " " + columns[4] +
+                        '<br>'+ dataCol[5] + " " + columns[5] + '</p>' +
+                        '</div>'
+                    ).appendTo('#viewData');
+                }
+            }
+        });
+    });
+
+});
+
 $('#additem').on('pageinit', function(){
 
 		var myForm = $( '#memberForm' );
@@ -133,10 +239,10 @@ function getImage(greeting, makeSubList) {
 
 
 
-var windowReload = function(){
-		window.location.reload();
-		return false;
-}
+var windowReload = function () {
+    window.location.reload();
+    return false;
+};
 
 function toggleControls( n )
 	{
@@ -164,24 +270,23 @@ function toggleControls( n )
 		}
 	}
 
-var editItem = function()
-	{
-		var value = localStorage.getItem( this.key );
-		var item  = JSON.parse( value );
-		
-		toggleControls( "off" );
-		
-		$( '#greetings' ).val( item.greetings[1] );
-		$( '#fullname' ).val( item.fullname[1] );
-        $( '#email').val(item.email[1] );
-		$( '#kids' ).val( item.kids[1] );
-		$( '#gender' ).val( item.gender[1] );
-		$( '#date' ).val( item.date[1] );
-		$( '#notes' ).val( item.notes[1] );
-		
-		thiskey         = this.key;
-		$( '#submit' ).on( 'click', storeData( thiskey ) );
-	}
+var editItem = function () {
+    var value = localStorage.getItem(this.key);
+    var item = JSON.parse(value);
+
+    toggleControls("off");
+
+    $('#greetings').val(item.greetings[1]);
+    $('#fullname').val(item.fullname[1]);
+    $('#email').val(item.email[1]);
+    $('#kids').val(item.kids[1]);
+    $('#gender').val(item.gender[1]);
+    $('#date').val(item.date[1]);
+    $('#notes').val(item.notes[1]);
+
+    thiskey = this.key;
+    $('#submit').on('click', storeData(thiskey));
+};
 	
 function makeItemLinks( key, linksLi )
 	{

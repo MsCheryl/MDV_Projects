@@ -1,0 +1,63 @@
+
+entryItem0:
+    fullName: Jocelyn
+    spouseName: Thomas
+    date: 02/24/2008
+    email: jthomas@msn.com
+    gender: Female
+    kids: 2
+    notes:
+
+entryItem1:
+    fullName: Deborah
+    spouseName: Smith
+    date: 12/15/1961
+    email: smithydeb@aol.com
+    gender: Female
+    kids: 5
+    notes: Single parent
+
+entryItem2:
+    fullName: Troy
+    spouseName: Thomas
+    date: 02/24/2008
+    email: thomastroy@msn.com
+    gender: Male
+    kids: 2
+    notes: Married to Jocelyn
+
+entryItem3:
+    fullName: Ziyah
+    spouseName: Thomas
+    date: 06/02/2012
+    email:
+    gender: Female
+    kids:
+    notes:
+
+entryItem4:
+   fullName: Troy
+   spouseName: Thomas, II
+   date: 06/02/2012
+   email:
+   gender: Male
+   kids:
+   notes:
+
+entryItem5:
+    fullName: Nancy
+    lname: Abner
+    date: 08/01/1972
+    email: nanabner@hotmail.com
+    gender: Female
+    kids: 2
+    notes: Married to Tommmie
+
+entryItem6:
+    fulspouseName: Tommie
+    spouseName: Abner
+    date: 08/01/1972
+    email: abnertom@hotmail.com
+    gender: Male
+    kids: 2
+    notes: Married to Nancy
