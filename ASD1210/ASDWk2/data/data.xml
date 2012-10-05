@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<entryItem>
+<memberInfo>
 
-	<entry>
-		<FullName>Johnny Walker</FullName>
-		<SpouseName>Cheryl</SpouseName>
-		<Date>01/01/2012</Date>
-        <Email>augusta1@yahoo.com</Email>
-        <Gender>Male</Gender>
-		<Kids>3</Kids>
-		<Notes>Interested in...</Notes>
-    </entry>
+	<item>
+		<greetings>Mr</greetings>
+        <name>Johnny Walker</name>
+		<spouse>Cheryl</spouse>
+		<date1>01/01/2012</date1>
+        <email>augusta1@yahoo.com</email>
+        <sex>Male</sex>
+		<kid>3</kid>
+		<comments>Interested in...</comments>
+    </item>
 
-	<entry>
+	<item>
+        <greetings>Mr</greetings>
         <Ful1Name>Keith Davis</Ful1Name>
         <SpouseName>Dana</SpouseName>
         <Date>01/17/2012</Date>
@@ -21,9 +23,10 @@
         <Gender>Male</Gender>
         <Kids>3</Kids>
         <Notes>Interested in...</Notes>
-	</entry>
+	</item>
 
-	<entry>
+	<item>
+        <greetings>Mr</greetings>
         <FullName>Darryl Cole</FullName>
         <SpouseName>Michele</SpouseName>
         <Date>02/10/2012</Date>
@@ -31,9 +34,10 @@
         <Gender>Male</Gender>
         <Kids>3</Kids>
         <Notes>Interested in...</Notes>
-	</entry>
+	</item>
 
-	<entry>
+	<item>
+        <greetings>Mr</greetings>
         <FullName>Carlos Rosario</FullName>
         <SpouseName>Lisa</SpouseName>
         <Date>02/17/2012</Date>
@@ -41,9 +45,10 @@
         <Gender>Male</Gender>
         <Kids>2</Kids>
         <Notes>Interested in...</Notes>
-	</entry>
+	</item>
 
-	<entry>
+	<item>
+        <greetings>Mrs</greetings>
         <FullName>Cyndi Rosario</FullName>
         <SpouseName>Ric</SpouseName>
         <Date>02/17/2012</Date>
@@ -51,25 +56,27 @@
         <Gender>Female</Gender>
         <Kids>2</Kids>
         <Notes>Married to Carlos</Notes>
-	</entry>
+	</item>
 
-	<entry>
+	<item>
+        <greetings>Master</greetings>
         <FullName>Deigo Rosario</FullName>
-        <SpouseName></SpouseName>
+        <SpouseName> </SpouseName>
         <Date>02/17/2012</Date>
         <Email> </Email>
         <Gender>Male</Gender>
         <Kids>0</Kids>
         <Notes>Interested in...</Notes>
-	</entry>
+	</item>
 	
-	<entry>
+	<item>
+        <greetings>Master</greetings>
         <FullName>Lorenzo Rosario</FullName>
-        <SpouseName></SpouseName>
+        <SpouseName> </SpouseName>
         <Date>02/17/2012</Date>
         <Email> </Email>
         <Gender>Male</Gender>
         <Kids>0</Kids>
         <Notes>Interested in...</Notes>
-	</entry>
-</entryItem>
+	</item>
+</memberInfo>
