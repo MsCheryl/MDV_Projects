@@ -1,0 +1,78 @@
+
+
+{
+    "memLog": [
+
+    {
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Johnny Walker"],
+        "email1":    ["Email:", "jwalker@yahoo.com"],
+        "date1":     ["Birthday:", "08/24/1977"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "3"],
+        "notes":    ["Notes:"," "],
+        "spouseName":   ["Spouse Name:", "Cheryl"]
+
+	},
+
+	{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Gerald Foster"],
+        "email1":    ["Email:", "gfoster@yahoo.com"],
+		"date1":     ["Birthday:", "04/20/1942"],
+        "gender":   ["Gender:", "Male"],
+        "kids":     ["Kids:", "1"],
+        "notes":    ["Notes:"," "],
+        "spouseName":   ["Spouse Name:", "Betty"]
+
+		
+	},
+	
+	{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Mykal Warren"],
+		"date1":     ["Birthday:", "02/18/1993"],
+		"email1":    ["Email:", "mwarren@msn.com"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "0"],
+        "notes":    ["Notes:"," "],
+        "spouseName":   ["Spouse Name:", " "]
+	},
+	
+	{
+        "greeting": ["Select a Greeting:", "Mrs."],
+        "fullName": ["Full Name:", "Serena Robinson"],
+		"date1":     ["Birthday:", "01/13/1992"],
+		"email1":    ["Email:", "srobinson@msn.com"],
+		"gender":   ["Gender:", "Female"],
+		"kids":     ["Kids:", "5"],
+        "notes":    ["Notes:"," "],
+        "spouseName":   ["Spouse Name:", "Clif"]
+	},
+	
+	{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Aaron Thomas"],
+		"date1":     ["Birthday:", "11/31/1970"],
+		"email1":    ["Email:", "actjmd@hotmail.com"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "3"],
+        "notes":    ["Notes:"," "],
+        "spouseName":   ["Spouse Name:", "Shakeah"]
+		
+	},
+	
+	{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Jalen Ferguson"],
+		"date1":     ["Birthday:", "04/16/1992"],
+		"email1":    ["Email:", "jferguson@aol.com"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "0"],
+        "notes":    ["Notes:"," "],
+        "spouseName":   ["Spouse Name:", " "]
+	}
+
+  ]
+}
+

@@ -1,0 +1,13 @@
+function ( doc ) {
+  if ( doc._id.substr(0, 4) === "member" ) {
+    emit(doc._id, { 
+        "greetings" : doc.greeting,
+        "fullName"  : doc.fullName,
+        "kids"		: doc.kids,
+        "gender"  	: doc.gender,
+        "email"		: doc.email,
+        "date1"     : doc.date1,
+        "notes"     : doc.notes 
+    });
+  }
+};

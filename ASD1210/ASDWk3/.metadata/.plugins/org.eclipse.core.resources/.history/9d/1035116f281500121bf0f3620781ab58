@@ -1,0 +1,9 @@
+{
+  "env": {
+    "default": {
+      "db": "http://127.0.0.1:5984/asdproject"
+    },
+     "cloudant": {
+      "db": "https://mscheryl:P@ssw0rd1@mscheryl.cloudant.com/asdproject/
+  }
+}
