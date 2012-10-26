@@ -1,0 +1,11 @@
+{
+  "env": {
+    "default": {
+      "db": "http://127.0.0.1:5984/asdwk4"
+    },
+     "cloudant": {
+      "db": "https://mscheryl:P@ssw0rd1@mscheryl.cloudant.com/asdwk4/"
+  
+    }
+  }
+}

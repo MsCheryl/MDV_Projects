@@ -1,0 +1,48 @@
+{"membership":[
+       {
+            "greeting":"Mr."
+            "fname":"Johnny",
+            "lname":"Walker",
+            "email":"jwalker@yahoo.com",
+            "sexval":"Male",
+            "memtype":"Baptized"
+           },
+        {
+            "greeting":"Mrs."
+            "fname":"Cheryl",
+            "lname":"Walker",
+            "email":"cwalker@gmail.com",
+            "sexval":"Female",
+            "memtype":"Baptized"
+           
+        },
+           {
+        	"greeting":"Mr."
+        	"fname":"Jalen",
+            "lname":"Walker",
+            "email":"jawalker@yahoo.com",
+            "sexval":"Male",
+            "memtype":"Baptized"
+           
+        	},
+         {
+        	"greeting":"Mrs."
+        	"fname":"Betty",
+            "lname":"Marshall",
+            "email":"bmarshall@aol.com",
+            "sexval":"Female",
+            "memtype": "Baptized"
+           
+        },
+           {
+        	"greeting":"Ms."
+        	"fname" :"Nancy",
+            "lname":"Abner",
+            "email":"nabner@hotmail.com",
+            "sexval":"Female",
+            "memtype":"Baptized"
+           
+        }
+    
+]
+}

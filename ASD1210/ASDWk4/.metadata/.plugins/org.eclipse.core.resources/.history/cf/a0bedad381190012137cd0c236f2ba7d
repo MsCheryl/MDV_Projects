@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<mensMinistry>
+	<men>
+		<greet>Mr.</greet>
+		<fname>Jerry</fname>
+		<lname>Lane</lname>
+		<email>jllane@aol.com</email>
+		<sex>Male</sex>
+	</men>
+	<men>
+		<greet>Mr.</greet>
+		<fname>Arthur</fname>
+		<lname>Caine</lname>
+		<email>ac_n_dc1@hotmail.com</email>
+		<sex>Male</sex>
+	</men>
+	<men>
+		<greet>Mr.</greet>
+		<fname>Johnathan</fname>
+		<lname>Hall</lname>
+		<email>jahll@hotmail.com</email>		
+		<sex>Male</sex>
+	</men>
+	<men>
+		<greet>Mr.</greet>
+		<fname>Benjamin</fname>
+		<lname>Gibbs</lname>
+		<email>bennieG@gmail.com</email>
+		<sex>Male</sex>
+	</men>
+	<men>
+		<greet>Mr.</greet>
+		<fname>Andrew</fname>
+		<lname>Jones</lname>
+		<email>ajone@msn.com</email>
+		<sex>Male</sex>
+	</men>
+</mensMinistry>

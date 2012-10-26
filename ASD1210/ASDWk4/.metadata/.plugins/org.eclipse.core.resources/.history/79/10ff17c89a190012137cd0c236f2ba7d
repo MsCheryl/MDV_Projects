@@ -1,0 +1,387 @@
+
+
+<!doctype html>  
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    
+    <title>Tenth Street Mobile</title>
+    
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- StyleSheets under here -->
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="modernizr.custom.min.js"></script>
+		<script src="jquery.couch.js"></script>	 
+    
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+    <!-- This will be the home page-->
+    <div data-role="page" id="home" data-theme="a">
+    
+    <div data-role="header" data-position="inline" data-theme="a">
+        <div id="logo">
+            <img src="images/brand.png" />
+        </div>
+         
+        <a href="#infoForm"   data-icon="plus" data-iconpos="notext" data-theme="c" class="ui-btn-right"></a>
+    </div>
+    <div data-role="content">
+        <div id="background">
+            <img src="images/cta.png"/>
+        </div>   
+    </div>
+    <div>
+        <ul data-role="listview" data-inset="true">
+            <li><div data-role="listview" data-collapsed="true" data-theme="c">
+                <h3>Membership Information:</h3> 
+                <a href="#infoForm"   data-role="button" data-icon="arrow-r" data-theme="c" data-iconpos="right">Sign Up</a>
+                <a href="#ministries" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">Ministry Information</a></div></li>
+            <li><div data-role="listview" data-collapsed="true" data-theme="c"> 
+                <h3>Sunday School Lessons</h3>        
+                <a href="http://www.crosswalk.com/devotionals/desert/" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">Men</a>
+                <a href="http://www.crosswalk.com/devotionals/for-women/" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">Women</a>
+                <a href="http://www.crosswalk.com/devotionals/bible-studies-for-students/" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">Students</a>
+                <a href="http://www.crosswalk.com/devotionals/family/" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">Family</a>
+                <a href="http://www.crosswalk.com/devotionals/encouragement/" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">Encouragement</a>
+            </li>   
+   		</ul> 
+   </div>	
+   <div id="getdata" data-role="fieldcontain">
+				<div id="get-data-buttons">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<a href="#" data-role="button" data-theme="b" id="json">JSON</a>
+						</div>
+					
+						<div class="ui-block-b">
+							<a href="#" data-role="button" data-theme="b" id="xml">XML</a>
+						</div>
+						
+						<div class="ui-block-a">
+							<a href="#" data-role="button" data-theme="b" id="csv">CSV</a>
+						</div>
+					</div>
+				</div>
+			</div>
+       
+        <div data-role="footer" data-position="fixed" data-theme="a" data-id="browse">
+            <div data-role="navbar" style="text-align: center">
+                  <ul>
+                        <li><a href="https://github.com/mscheryl/MDV_Projects/ASD1210/ASDWk4/index.html">REPO</a></li>
+						<li><a href="http://mscheryl.github.com/MDV_Projects/ASD1210/ASDWk4/index.html">LIVE</a></li>
+                   </ul>
+             
+            </div>
+               
+        </div>
+        
+     </div>
+     <div data-role="page" id="JSON" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="images/cta.png"/> </center>
+				</div>
+
+		</div>
+		
+		<div data-role="page" id="XML" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="images/cta.png"/> </center>
+				</div>
+
+		</div>
+			
+		<div data-role="page" id="CSV" data-add-back-btn="true" data-theme="a">
+			
+			<div data-role="header" data-position="fixed" id="header">
+				<center> <img src="images/cta.png"/> </center>
+				</div>
+
+		</div>
+
+  
+    <!--Ministry page-->
+    <div data-role="page" id="ministries" data-theme="a">
+    
+    <div data-role="header" data-position="inline" data-theme="a">
+        <div id="logo">
+            <img src="images/brand.png" />
+        </div>
+         <a href="#home" data-icon="home" data-iconpos="notext" data-theme="c"></a>
+        <a href="#infoForm"   data-icon="plus" data-iconpos="notext" data-theme="c" class="ui-btn-right"></a>
+    </div><label><h3>Some of our Ministries:</h3></label>
+        
+        <!--<ul id = "ministryList" data-role="collapsible" data-filter="true" data-theme="c">--></ul>
+           <div data-role="collapsible" data-theme='c'>
+						<h6>MEN</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="menministry">
+						Men's Ministry</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="deacon">
+						Deacon's Ministry</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="menschoir">
+						Men's Choir</a>
+						</li>
+					</ul>
+					</div>
+				<!-- <ul id = "ministryList" data-role="collapsible" data-filter="true" data-theme="c">--></ul>
+						<div data-role="collapsible" data-theme='c'>
+							<h6>WOMEN</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="womenministry">
+						Women's Ministry</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="deaconess">
+						Deaconess Ministry</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="womenschoir">
+						Women's Choir</a>
+						</li>
+					</ul>
+					</div>
+						
+						<div data-role="collapsible" data-theme='c'>
+							<h6>TEENS (ages 13-18)</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="teenministry">
+						R.E.B.E.L.S 4 Life</a>
+						</li>
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="collegebound">
+						College Bound</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="youthchoir">
+						Youth Choir</a>
+						</li>
+					</ul>
+					</div>
+					
+						<div data-role="collapsible" data-theme='c'>
+							<h6>CHILDREN (ages 1-12)</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="childrenchoir">
+						Children's Choir</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="childrenministry">
+						Children's Church</a>
+						</li>
+					</ul>
+					</div>
+							
+						<div data-role="collapsible" data-theme='c'>
+							<h6>SENIORS</h6>
+					<ul data-role="listview" data-theme="a">
+						<li>					
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="seniors">
+						Senior Information Assistance</a>
+						</li>
+						<li>			
+						<a data-theme="a" data-role="button" data-iconpos="right" data-icon="r-arrow" href="food">
+						Commodity Food</a>
+						</li>
+					</ul>
+					</div>
+            <div data-role="footer" data-position="fixed" data-theme="a" data-id="browse">
+            <div data-role="navbar" style="text-align: center">
+                  <ul>
+                        <li><a href="https://github.com/mscheryl/MDV_Projects/ASD1210/ASDWk4/index.html">REPO</a></li>
+						<li><a href="http://mscheryl.github.com/MDV_Projects/ASD1210/ASDWk4/index.html">LIVE</a></li>
+                   </ul>
+             
+            </div>
+               
+        </div>
+    </div>
+
+    <!--Mem's Ministry Page***************************************************-->
+    <div data-role="page" id="coming">
+    
+    <div data-role="header" data-position="inline" data-theme="a">
+        <div id="logo">
+            <img src="images/cta.png" />
+        </div>
+         <a href="#home" data-icon="home" data-iconpos="notext" data-theme="c"></a>
+        <a href="#infoForm"   data-icon="plus" data-iconpos="notext" data-theme="c" class="ui-btn-right"></a>
+    </div>
+
+            This page is under construction!
+       <div data-role="footer" data-position="fixed" data-theme="a" data-id="browse">
+            <div data-role="navbar" style="text-align: center">
+                  <ul>
+                        <li><a href="https://github.com/mscheryl/MDV_Projects/ASD1210/ASDWk4/index.html">REPO</a></li>
+						<li><a href="http://mscheryl.github.com/MDV_Projects/ASD1210/ASDWk4/index.html">LIVE</a></li>
+                   </ul>
+             
+            </div>
+               
+        </div>
+
+         </div>
+    </div>
+   <!--Signup page***************************************************-->
+   
+    <div data-role="page" id="infoForm" data-theme="a">
+            <div data-role="header" data-position="inline" data-theme="a">
+        <div id="logo">
+            <img src="images/cta.png" />
+        </div>
+                <a href="#home" data-icon="home" data-iconpos="notext" data-theme="c"></a>
+                <a href="#infoForm"   data-icon="plus" data-iconpos="notext" data-theme="c" class="ui-btn-right"></a>
+            </div>
+            <div data-role="content">
+                <div id="formHeading">
+                    <h1>Sign Up!</h1>
+            </div>
+                <form action="" method = "post" id="contactForm">
+                    <ul class="errors"id = "errorMessages"></ul>
+                    <br />
+            
+                    <fieldset>
+                    <legend>We strongly believe that a relationship with God involves reaching 
+				out through our lives to others.  That is why you will find an abundance of ministries reaching 
+				out to people of every age group, both inside and outside our walls.</legend>
+                    <br>
+                    <h4>BOLD items are REQUIRED</h4>
+                <div data-role="fieldcontain">
+                    <label>Greeting: </br> </label>
+                    <select name="greeting" id="dropdown" data-theme="d"  data-native-menu="false" class="required" >
+						<option data-placeholder="true" value="">Please Select One</option>
+						<optgroup label="Greetings">
+							<option value="mr">Mr.</option>
+							<option value="mrs">Mrs.</option>
+							<option value="ms">Ms.</option>
+							<option value="miss">Miss</option>
+						</optgroup>
+					</select>
+                    
+                </div>
+                
+                    <label for="fName"> First Name:</label><input id = "fname" type="text" name="fname" class="required"data-theme="c"/><br>
+                    <label for="lName"> Last Name:</label><input id = "lname" type="text" name="lname" class="required"data-theme="c"/><br>
+                    <label for="email"> Email:</label><input id = "email" type="text" name="email" class="required"data-theme="c"/><br>
+                   
+                    <label for="bday">Birthday (YYYY-MM-DD)</label>
+
+                    <input name="mydate" id="bday" type="date" data-role="datebox" data-options='{"mode": "flipbox" "useTodayButton":true}'>
+
+    
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                    <fieldset data-role="gender">
+                        <legend>Gender</legend>
+                        <input id="radios1" type="radio" name="sex" value="Yes" class="required" data-theme="c"/>
+                        <label for="radios1">Male</label>
+                        <input id="radios2" type="radio" name="sex" value="No" data-theme="c"/>
+                        <label for="radios2">Female</label>
+                    </fieldset>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="notes">Any Additional Information? <br />(Please specify below)</label>
+                    <input type="checkbox" name="notes" id="notes" value="Yes" data-theme="c"/>
+                    <div id="messageBlock">
+                        <label for="message"><br />Comments:<br /></label>
+                        <textarea name="message" id="message" data-theme="c">We should know....</textarea><br />
+                    </div>
+                </div>
+                <div id="ease" data-role="fieldContain">   
+                    <label for="sliderBar">How easy was this process?</label>
+                    <input type="range" id="sliderBar" min="0" max="10" step="1" value="5" data-theme="c"><br>
+                </div>
+                
+                    <input type="submit" id="send" value="Add Info" data-icon="arrow-r" data-iconpos="right" data-theme="b"/>
+                    <!--<a href="#" id="send" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a">Send</a>-->
+                    <a href="#infoForm" id="clear" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="c">Clear</a>
+                    <a href='#infoList' id="show">See All Entries</a>
+                </fieldset>
+<!--                <a href="#errorListing" id="errorLink" data-rel="dialog">Open errors</a>-->
+            </form>
+            <form id="seeInfo">
+                
+            <div  class="showIt" id="previewInfo" data-role="fieldcontain"></div>
+            </form>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="a" data-id="browse">
+            <div data-role="navbar" style="text-align: center">
+                  <ul>
+                        <li><a href="https://github.com/mscheryl/MDV_Projects/ASD1210/ASDWk4/index.html">REPO</a></li>
+						<li><a href="http://mscheryl.github.com/MDV_Projects/ASD1210/ASDWk4/index.html">LIVE</a></li>
+                   </ul>
+             
+            </div>
+               
+        </div>
+
+    
+    <!--Error dailog-->
+   <div data-role="dialog" id="errorListing">
+        <div data-role="header" data-position="fixed">
+            <h1>Missing Info:</h1>
+        </div>
+        <div data-role="content">
+            <ul>
+                <li>Test Message</li>
+            </ul>
+        </div>
+    </div>
+    
+   <div data-role="page" id="infoList">
+        <div data-role="content">
+            <div class="preview" id="previewInfo" data-role="fieldcontain">
+                <!--<li data-theme="d"><a href="#kwilliams"><img src="img/wommen.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Kathy Williams</h3></div></a></li>
+					<li data-theme="d"><a href="#fstrong"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Faith Strong</h3></div></a></li>
+					<li data-theme="d"><a href="#dthomas"><img src="img/teen.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Dominic Thomas</h3></div></a></li>
+					<li data-theme="d"><a href="#jbelk"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Jewel Belk</h3></div></a></li>
+					<li data-theme="d"><a href="#afogan"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Avonda Fogan</h3></div></a></li>
+					<li data-theme="d"><a href="#afogan"><img src="img/women.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Anita Fogan</h3></div></a></li>	
+					<li data-theme="d"><a href="#vfogan"><img src="img/men.png" class="ui-li-icon" /> 
+						<div align="center"><h3>Vaughn Fogan</h3></div></a></li>-->
+            </div>
+        </div>
+    </div>
+        <script src="http://code.jquery.com/jquery-1.8.1.min.js" type="text/javascript"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js" type="text/javascript"></script>
+		<script src="jquery.couch.js" type="text/javascript"></script>
+		<script src="jquery.validate.min.js" type="text/javascript"></script>
+		<script src="data.json" type="text/javascript"></script>
+		<script src="json.js" type="text/javascript"></script>
+		<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
