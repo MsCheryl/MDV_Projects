@@ -1,0 +1,70 @@
+
+entryItem0:
+    greetings: Mrs.
+    firstName: Jocelyn
+    lastName: Thomas
+    date: 02/24/2008
+    email: jthomas@msn.com
+    gender: Female
+    kids: 2
+    notes:
+
+entryItem1:
+    greetings: Ms.
+    firstName: Deborah
+    lastName: Smith
+    date: 12/15/1961
+    email: smithydeb@aol.com
+    gender: Female
+    kids: 5
+    notes: Single parent
+
+entryItem2:
+    greetings: Mr.
+    firstName: Troy
+    lastName: Thomas
+    date: 02/24/2008
+    email: thomastroy@msn.com
+    gender: Male
+    kids: 2
+    notes: Married to Jocelyn
+
+entryItem3:
+    greetings: Miss
+    firstName: Ziyah
+    lastName: Thomas
+    date: 06/02/2012
+    email:
+    gender: Female
+    kids:
+    notes:
+
+entryItem4:
+   greetings: Master
+   firstName: Troy
+   lastName: Thomas, II
+   date: 06/02/2012
+   email:
+   gender: Male
+   kids:
+   notes:
+
+entryItem5:
+    greetings: Mrs.
+    firstName: Nancy
+    lname: Abner
+    date: 08/01/1972
+    email: nanabner@hotmail.com
+    gender: Female
+    kids: 2
+    notes: Married to Tommmie
+
+entryItem6:
+    greetings: Mr.
+    fullastName: Tommie
+    lastName: Abner
+    date: 08/01/1972
+    email: abnertom@hotmail.com
+    gender: Male
+    kids: 2
+    notes: Married to Nancy

@@ -44,7 +44,7 @@ $( '#remoteData' ).on('pageinit', function(){
         type:       'GET',
         dataType:   'json',
         success:    function ( json ) {
-            console.log(json);
+
             for ( var i = 0, len = json.memLog.length; i < len; i++ ) {
                 var memLog = json.memLog[i];
 

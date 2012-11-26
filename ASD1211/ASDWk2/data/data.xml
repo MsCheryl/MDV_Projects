@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<memberInfo>
+
+	<item>
+		<greetings>Mr</greetings>
+        <name>Johnny Walker</name>
+		<spouse>Cheryl</spouse>
+		<date1>01/01/2012</date1>
+        <email>augusta1@yahoo.com</email>
+        <sex>Male</sex>
+		<kid>3</kid>
+		<comments>Interested in...</comments>
+    </item>
+
+	<item>
+        <greetings>Mr</greetings>
+        <fullName>Keith Davis</fullName>
+        <spouseName>Dana</spouseName>
+        <date>01/17/2012</date>
+        <email>keithdav@msn.com</email>
+        <gender>Male</gender>
+        <kids>3</kids>
+        <notes>Interested in...</notes>
+	</item>
+
+	<item>
+        <greetings>Mr</greetings>
+        <fullName>Darryl Cole</fullName>
+        <spouseName>Michele</spouseName>
+        <date>02/10/2012</date>
+        <email>coleycole@verizon.net</email>
+        <gender>Male</gender>
+        <kids>3</kids>
+        <notes>Interested in...</notes>
+	</item>
+
+	<item>
+        <greetings>Mr</greetings>
+        <fullName>Carlos Rosario</fullName>
+        <spouseName>Lisa</spouseName>
+        <date>02/17/2012</date>
+        <email>walterslos@msn.com</email>
+        <gender>Male</gender>
+        <kids>2</kids>
+        <notes>Interested in...</notes>
+	</item>
+
+	<item>
+        <greetings>Mrs</greetings>
+        <fullName>Cyndi Rosario</fullName>
+        <spouseName>Ric</spouseName>
+        <date>02/17/2012</date>
+        <email>cynergyFit@msn.com</email>
+        <gender>Female</gender>
+        <kids>2</kids>
+        <notes>Married to Carlos</notes>
+	</item>
+
+	<item>
+        <greetings>Master</greetings>
+        <fullName>Deigo Rosario</fullName>
+        <spouseName> </spouseName>
+        <date>02/17/2012</date>
+        <email> </email>
+        <gender>Male</gender>
+        <kids>0</kids>
+        <notes>Interested in...</notes>
+	</item>
+	
+	<item>
+        <greetings>Master</greetings>
+        <fullName>Lorenzo Rosario</fullName>
+        <spouseName> </spouseName>
+        <date>02/17/2012</date>
+        <email> </email>
+        <gender>Male</gender>
+        <kids>0</kids>
+        <notes>Interested in...</notes>
+	</item>
+</memberInfo>

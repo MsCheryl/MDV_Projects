@@ -1,0 +1,72 @@
+
+
+{
+	"memberLog": [
+
+    "0":{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Johnny Walker"],
+        "email":    ["Email:", "jwalker@yahoo.com"],
+        "date":     ["Birthday:", "08/24/1977"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "3"],
+        "spouseName":   ["Spouse Name:", "Cheryl"]
+
+	},
+
+	"1":{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Gerald Foster"],
+        "email":    ["Email:", "gfoster@yahoo.com"],
+		"date":     ["Birthday:", "04/20/1942"],
+        "gender":   ["Gender:", "Male"],
+        "kids":     ["Kids:", "1"],
+        "spouseName":   ["Spouse Name:", "Betty"]
+
+		
+	},
+	
+	"2":{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Mykal Warren"],
+		"date":     ["Birthday:", "02/18/1993"],
+		"email":    ["Email:", "mwarren@msn.com"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "0"],
+        "spouseName":   ["Spouse Name:", " "]
+	},
+	
+	"3":{
+        "greeting": ["Select a Greeting:", "Mrs."],
+        "fullName": ["Full Name:", "Serena Robinson"],
+		"date":     ["Birthday:", "01/13/1992"],
+		"email":    ["Email:", "srobinson@msn.com"],
+		"gender":   ["Gender:", "Female"],
+		"kids":     ["Kids:", "5"],
+        "spouseName":   ["Spouse Name:", "Clif"]
+	},
+	
+	"4":{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Aaron Thomas"],
+		"date":     ["Birthday:", "11/31/1970"],
+		"email":    ["Email:", "actjmd@hotmail.com"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "3"],
+        "spouseName":   ["Spouse Name:", "Shakeah"]
+		
+	},
+	
+	"5":{
+        "greeting": ["Select a Greeting:", "Mr."],
+        "fullName": ["Full Name:", "Jalen Ferguson"],
+		"date":     ["Birthday:", "04/16/1992"],
+		"email":    ["Email:", "jferguson@aol.com"],
+		"gender":   ["Gender:", "Male"],
+		"kids":     ["Kids:", "0"],
+        "spouseName":   ["Spouse Name:", " "]
+	}
+
+  ]
+}
+
